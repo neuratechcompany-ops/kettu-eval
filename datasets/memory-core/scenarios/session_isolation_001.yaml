@@ -1,0 +1,40 @@
+scenario_id: session_isolation_001
+title: User A cannot see User B data
+category: session_isolation
+difficulty: medium
+description: Two users with opposite preferences. No cross-leak.
+operations:
+- op: start_session
+  session: s1
+  user: user_a
+- op: add_fact
+  session: s1
+  fact:
+    key: preferred_model
+    value: gpt-oss
+    user_id: user_a
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: user_b
+- op: add_fact
+  session: s2
+  fact:
+    key: preferred_model
+    value: deepseek
+    user_id: user_b
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_contain:
+  - key: preferred_model
+    value: deepseek
+  facts_exclude:
+  - key: preferred_model
+    value: gpt-oss
+metrics:
+- session_isolation
+hard_gates:
+- cross_session_leakage

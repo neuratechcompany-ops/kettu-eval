@@ -1,0 +1,60 @@
+dataset_id: memory-core
+version: 1.0.0
+description: "Core memory evaluation — 30 deterministic scenarios for agent memory systems"
+license: MIT
+language: multilingual
+scenario_count: 30
+created_at: "2026-07-12"
+checksum: "sha256:will-be-computed"
+
+categories:
+  fact_retention:
+    count: 4
+    description: "Basic fact storage and recall across sessions"
+  fact_update:
+    count: 4
+    description: "Updating existing facts, temporal ordering, conflict resolution"
+  preference_memory:
+    count: 3
+    description: "Storing and retrieving user preferences and constraints"
+  project_isolation:
+    count: 3
+    description: "Separate projects must not leak data between each other"
+  session_isolation:
+    count: 3
+    description: "Different users/sessions must be fully isolated"
+  noise_resistance:
+    count: 3
+    description: "Irrelevant events must not pollute retrieval"
+  contradiction:
+    count: 3
+    description: "Conflicting facts — system must return most recent or flag conflict"
+  restart_recovery:
+    count: 2
+    description: "Data must survive restart"
+  long_horizon:
+    count: 3
+    description: "Facts from early in session still retrievable after many events"
+  namespace_separation:
+    count: 2
+    description: "Same key in different namespaces must not collide"
+
+evaluation:
+  mode: deterministic
+  llm_required: false
+  metrics:
+    - fact_recall
+    - fact_precision
+    - preference_recall
+    - update_accuracy
+    - session_isolation
+    - project_isolation
+    - namespace_isolation
+    - restart_recovery
+    - noise_resistance
+    - false_memory_rate
+  hard_gates:
+    - cross_session_leakage
+    - project_leakage
+    - restart_data_loss
+    - namespace_corruption

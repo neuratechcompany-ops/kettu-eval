@@ -1,0 +1,37 @@
+scenario_id: fact_update_001
+title: Simple fact update — latest value wins
+category: fact_update
+difficulty: easy
+description: Model preference changes. System must return latest value.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: preferred_model
+    value: qwen
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+- op: add_fact
+  session: s2
+  fact:
+    key: preferred_model
+    value: gpt-oss
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_contain:
+  - key: preferred_model
+    value: gpt-oss
+  facts_exclude:
+  - key: preferred_model
+    value: qwen
+metrics:
+- update_accuracy
+hard_gates: []

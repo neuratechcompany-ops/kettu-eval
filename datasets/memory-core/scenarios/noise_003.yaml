@@ -1,0 +1,75 @@
+scenario_id: noise_003
+title: Repeated noise patterns
+category: noise_resistance
+difficulty: medium
+description: Same tool output repeated 10 times. Fact must still be found.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: critical_config
+    value: production
+- op: add_event
+  session: s1
+  event:
+    type: healthcheck
+    content: GET /health 200 OK
+- op: add_event
+  session: s1
+  event:
+    type: healthcheck
+    content: GET /health 200 OK
+- op: add_event
+  session: s1
+  event:
+    type: healthcheck
+    content: GET /health 200 OK
+- op: add_event
+  session: s1
+  event:
+    type: healthcheck
+    content: GET /health 200 OK
+- op: add_event
+  session: s1
+  event:
+    type: healthcheck
+    content: GET /health 200 OK
+- op: add_event
+  session: s1
+  event:
+    type: healthcheck
+    content: GET /health 200 OK
+- op: add_event
+  session: s1
+  event:
+    type: healthcheck
+    content: GET /health 200 OK
+- op: add_event
+  session: s1
+  event:
+    type: healthcheck
+    content: GET /health 200 OK
+- op: add_event
+  session: s1
+  event:
+    type: healthcheck
+    content: GET /health 200 OK
+- op: add_event
+  session: s1
+  event:
+    type: healthcheck
+    content: GET /health 200 OK
+- op: get_context
+  session: s1
+expected_state:
+  session: s1
+  facts_contain:
+  - key: critical_config
+    value: production
+  facts_count_min: 1
+metrics:
+- noise_resistance
+hard_gates: []

@@ -1,0 +1,53 @@
+scenario_id: session_isolation_002
+title: Multiple users, fully isolated
+category: session_isolation
+difficulty: medium
+description: 3 users, 3 different facts. Each sees only their own.
+operations:
+- op: start_session
+  session: sa
+  user: alice
+- op: add_fact
+  session: sa
+  fact:
+    key: role
+    value: admin
+    user_id: alice
+- op: end_session
+  session: sa
+- op: start_session
+  session: sb
+  user: bob
+- op: add_fact
+  session: sb
+  fact:
+    key: role
+    value: user
+    user_id: bob
+- op: end_session
+  session: sb
+- op: start_session
+  session: sc
+  user: charlie
+- op: add_fact
+  session: sc
+  fact:
+    key: role
+    value: viewer
+    user_id: charlie
+- op: get_context
+  session: sc
+expected_state:
+  session: sc
+  facts_contain:
+  - key: role
+    value: viewer
+  facts_exclude:
+  - key: role
+    value: admin
+  - key: role
+    value: user
+metrics:
+- session_isolation
+hard_gates:
+- cross_session_leakage

@@ -1,0 +1,283 @@
+scenario_id: long_horizon_003
+title: Updated fact survives long horizon
+category: long_horizon
+difficulty: hard
+description: Fact added early, updated late. Final value survives 30 more events.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: status
+    value: initial
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_0
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_1
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_2
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_3
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_4
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_5
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_6
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_7
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_8
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_9
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_10
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_11
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_12
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_13
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_14
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_15
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_16
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_17
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_18
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: event_19
+- op: add_fact
+  session: s1
+  fact:
+    key: status
+    value: updated
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_0
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_1
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_2
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_3
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_4
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_5
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_6
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_7
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_8
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_9
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_10
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_11
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_12
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_13
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_14
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_15
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_16
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_17
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_18
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_19
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_20
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_21
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_22
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_23
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_24
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_25
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_26
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_27
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_28
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: post_29
+- op: get_context
+  session: s1
+expected_state:
+  session: s1
+  facts_contain:
+  - key: status
+    value: updated
+  facts_exclude:
+  - key: status
+    value: initial
+metrics:
+- long_horizon
+- update_accuracy
+hard_gates: []

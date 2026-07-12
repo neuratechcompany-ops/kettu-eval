@@ -1,0 +1,33 @@
+scenario_id: fact_retention_001
+title: Basic fact survives session boundary
+category: fact_retention
+difficulty: easy
+description: User states their name in session 1. Session 2 must recall it.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+  project: default
+- op: add_fact
+  session: s1
+  fact:
+    key: user_name
+    value: Aurum Kettunen
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+  project: default
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_contain:
+  - key: user_name
+    value: Aurum Kettunen
+  facts_count_min: 1
+  facts_exclude: []
+metrics:
+- fact_recall
+hard_gates: []

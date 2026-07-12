@@ -1,0 +1,43 @@
+scenario_id: preference_002
+title: Forbidden operations remembered
+category: preference_memory
+difficulty: easy
+description: User forbids specific operations. Must be enforced.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: forbid_shell_true
+    value: 'true'
+- op: add_fact
+  session: s1
+  fact:
+    key: forbid_sudo
+    value: 'true'
+- op: add_fact
+  session: s1
+  fact:
+    key: forbid_network
+    value: 'false'
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_contain:
+  - key: forbid_shell_true
+    value: 'true'
+  - key: forbid_sudo
+    value: 'true'
+  - key: forbid_network
+    value: 'false'
+metrics:
+- preference_recall
+hard_gates: []

@@ -1,0 +1,33 @@
+scenario_id: restart_001
+title: Data survives restart
+category: restart_recovery
+difficulty: medium
+description: Facts added before restart must be visible after restart.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: persistent_fact
+    value: survives-restart
+- op: end_session
+  session: s1
+- op: restart
+  note: Simulate adapter restart — create new adapter instance, same storage
+- op: start_session
+  session: s2
+  user: aurum
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_contain:
+  - key: persistent_fact
+    value: survives-restart
+  facts_count_min: 1
+metrics:
+- restart_recovery
+hard_gates:
+- restart_data_loss

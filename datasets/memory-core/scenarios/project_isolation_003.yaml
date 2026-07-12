@@ -1,0 +1,42 @@
+scenario_id: project_isolation_003
+title: Same key, different projects, different values
+category: project_isolation
+difficulty: easy
+description: Key 'version' means different things in different projects.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+  project: frontend
+- op: add_fact
+  session: s1
+  fact:
+    key: version
+    value: 2.3.1
+    project_id: frontend
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+  project: backend
+- op: add_fact
+  session: s2
+  fact:
+    key: version
+    value: 4.1.0
+    project_id: backend
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_contain:
+  - key: version
+    value: 4.1.0
+  facts_exclude:
+  - key: version
+    value: 2.3.1
+metrics:
+- project_isolation
+hard_gates:
+- project_leakage

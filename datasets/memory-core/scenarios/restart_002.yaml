@@ -1,0 +1,61 @@
+scenario_id: restart_002
+title: Multiple facts survive restart
+category: restart_recovery
+difficulty: medium
+description: 5 facts before restart, all must survive.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: config_0
+    value: val_0
+- op: add_fact
+  session: s1
+  fact:
+    key: config_1
+    value: val_1
+- op: add_fact
+  session: s1
+  fact:
+    key: config_2
+    value: val_2
+- op: add_fact
+  session: s1
+  fact:
+    key: config_3
+    value: val_3
+- op: add_fact
+  session: s1
+  fact:
+    key: config_4
+    value: val_4
+- op: end_session
+  session: s1
+- op: restart
+- op: start_session
+  session: s2
+  user: aurum
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_count_min: 5
+  facts_contain:
+  - key: config_0
+    value: val_0
+  - key: config_1
+    value: val_1
+  - key: config_2
+    value: val_2
+  - key: config_3
+    value: val_3
+  - key: config_4
+    value: val_4
+metrics:
+- restart_recovery
+- fact_recall
+hard_gates:
+- restart_data_loss

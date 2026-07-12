@@ -1,0 +1,177 @@
+scenario_id: noise_002
+title: Search through noisy events
+category: noise_resistance
+difficulty: medium
+description: Search for a specific fact among 30 noisy events.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 0
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 1
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 2
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 3
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 4
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 5
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 6
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 7
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 8
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 9
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 10
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 11
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 12
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 13
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: Random message number 14
+- op: add_fact
+  session: s1
+  fact:
+    key: needle
+    value: found-me
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 0
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 1
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 2
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 3
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 4
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 5
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 6
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 7
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 8
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 9
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 10
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 11
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 12
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 13
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: More noise 14
+- op: search
+  session: s1
+  query: needle
+expected_state:
+  session: s1
+  search_results_contain:
+  - key: needle
+    value: found-me
+  search_results_count_min: 1
+metrics:
+- noise_resistance
+- fact_recall
+hard_gates: []

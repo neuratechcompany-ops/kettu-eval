@@ -1,0 +1,42 @@
+scenario_id: contradiction_003
+title: Partial contradiction — one field changes, another stays
+category: contradiction
+difficulty: hard
+description: Two related facts. One changes, one doesn't. Update must not corrupt unchanged fact.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: db_host
+    value: localhost
+- op: add_fact
+  session: s1
+  fact:
+    key: db_port
+    value: '5432'
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+- op: add_fact
+  session: s2
+  fact:
+    key: db_host
+    value: db.example.com
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_contain:
+  - key: db_host
+    value: db.example.com
+  - key: db_port
+    value: '5432'
+metrics:
+- contradiction_resolution
+- update_accuracy
+hard_gates: []

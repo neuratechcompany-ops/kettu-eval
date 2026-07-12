@@ -1,0 +1,68 @@
+scenario_id: project_isolation_002
+title: Three projects — different architectures
+category: project_isolation
+difficulty: medium
+description: Each project has its own architecture. No mixing.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+  project: kettu-mem
+- op: add_fact
+  session: s1
+  fact:
+    key: architecture
+    value: FAISS + Neo4j
+    project_id: kettu-mem
+- op: add_fact
+  session: s1
+  fact:
+    key: language
+    value: Python
+    project_id: kettu-mem
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+  project: kettu-squeeze
+- op: add_fact
+  session: s2
+  fact:
+    key: architecture
+    value: SQLite + blobs
+    project_id: kettu-squeeze
+- op: add_fact
+  session: s2
+  fact:
+    key: language
+    value: Python
+    project_id: kettu-squeeze
+- op: end_session
+  session: s2
+- op: start_session
+  session: s3
+  user: aurum
+  project: kettu-eval
+- op: add_fact
+  session: s3
+  fact:
+    key: architecture
+    value: Adapter-based
+    project_id: kettu-eval
+- op: get_context
+  session: s3
+expected_state:
+  session: s3
+  facts_contain:
+  - key: architecture
+    value: Adapter-based
+  facts_exclude:
+  - key: architecture
+    value: FAISS + Neo4j
+  - key: architecture
+    value: SQLite + blobs
+metrics:
+- project_isolation
+hard_gates:
+- project_leakage

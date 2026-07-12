@@ -1,0 +1,277 @@
+scenario_id: long_horizon_001
+title: Early fact survives 50 events
+category: long_horizon
+difficulty: hard
+description: Fact at position 0, 50 noisy events, then query.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: early_fact
+    value: first-thing
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_0
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_1
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_2
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_3
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_4
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_5
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_6
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_7
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_8
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_9
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_10
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_11
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_12
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_13
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_14
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_15
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_16
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_17
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_18
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_19
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_20
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_21
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_22
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_23
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_24
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_25
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_26
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_27
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_28
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_29
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_30
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_31
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_32
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_33
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_34
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_35
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_36
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_37
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_38
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_39
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_40
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_41
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_42
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_43
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_44
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_45
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_46
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_47
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_48
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: msg_49
+- op: get_context
+  session: s1
+expected_state:
+  session: s1
+  facts_contain:
+  - key: early_fact
+    value: first-thing
+  facts_count_min: 1
+  events_count_min: 50
+metrics:
+- long_horizon
+- fact_recall
+hard_gates: []

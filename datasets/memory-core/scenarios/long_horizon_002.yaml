@@ -1,0 +1,276 @@
+scenario_id: long_horizon_002
+title: Mid-session fact survives to end
+category: long_horizon
+difficulty: hard
+description: Fact at position 25, 50 more events, then query.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_0
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_1
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_2
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_3
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_4
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_5
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_6
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_7
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_8
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_9
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_10
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_11
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_12
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_13
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_14
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_15
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_16
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_17
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_18
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_19
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_20
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_21
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_22
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_23
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: prefix_24
+- op: add_fact
+  session: s1
+  fact:
+    key: mid_fact
+    value: middle-thing
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_0
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_1
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_2
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_3
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_4
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_5
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_6
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_7
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_8
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_9
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_10
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_11
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_12
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_13
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_14
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_15
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_16
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_17
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_18
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_19
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_20
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_21
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_22
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_23
+- op: add_event
+  session: s1
+  event:
+    type: message
+    content: suffix_24
+- op: get_context
+  session: s1
+expected_state:
+  session: s1
+  facts_contain:
+  - key: mid_fact
+    value: middle-thing
+  facts_count_min: 1
+metrics:
+- long_horizon
+- fact_recall
+hard_gates: []

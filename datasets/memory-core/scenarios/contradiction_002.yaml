@@ -1,0 +1,51 @@
+scenario_id: contradiction_002
+title: Implicit contradiction — style changes
+category: contradiction
+difficulty: medium
+description: User first wants verbose, then concise. Latest wins.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: verbosity
+    value: verbose
+- op: add_fact
+  session: s1
+  fact:
+    key: detail_level
+    value: high
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+- op: add_fact
+  session: s2
+  fact:
+    key: verbosity
+    value: concise
+- op: add_fact
+  session: s2
+  fact:
+    key: detail_level
+    value: minimal
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_contain:
+  - key: verbosity
+    value: concise
+  - key: detail_level
+    value: minimal
+  facts_exclude:
+  - key: verbosity
+    value: verbose
+  - key: detail_level
+    value: high
+metrics:
+- contradiction_resolution
+hard_gates: []

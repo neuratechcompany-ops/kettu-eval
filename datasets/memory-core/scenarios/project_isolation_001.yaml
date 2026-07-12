@@ -1,0 +1,42 @@
+scenario_id: project_isolation_001
+title: Two projects — different databases
+category: project_isolation
+difficulty: medium
+description: Project Alpha uses Redis, Project Beta uses SQLite. Must not leak.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+  project: alpha
+- op: add_fact
+  session: s1
+  fact:
+    key: database
+    value: Redis
+    project_id: alpha
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+  project: beta
+- op: add_fact
+  session: s2
+  fact:
+    key: database
+    value: SQLite
+    project_id: beta
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_contain:
+  - key: database
+    value: SQLite
+  facts_exclude:
+  - key: database
+    value: Redis
+metrics:
+- project_isolation
+hard_gates:
+- project_leakage

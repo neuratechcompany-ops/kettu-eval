@@ -1,0 +1,44 @@
+scenario_id: fact_retention_004
+title: Exact value preservation
+category: fact_retention
+difficulty: easy
+description: Numeric and structured values must be preserved byte-exact.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: api_port
+    value: '8765'
+- op: add_fact
+  session: s1
+  fact:
+    key: endpoint
+    value: https://api.example.com/v2/health
+- op: add_fact
+  session: s1
+  fact:
+    key: token_prefix
+    value: sk-6e1cce
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_contain:
+  - key: api_port
+    value: '8765'
+  - key: endpoint
+    value: https://api.example.com/v2/health
+  - key: token_prefix
+    value: sk-6e1cce
+metrics:
+- fact_recall
+- exact_match
+hard_gates: []

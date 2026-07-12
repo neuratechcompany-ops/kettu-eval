@@ -1,0 +1,45 @@
+scenario_id: preference_003
+title: Preference update with additional constraint
+category: preference_memory
+difficulty: medium
+description: Shell preference changes from forbidden to conditional.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: shell_policy
+    value: forbidden
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+- op: add_fact
+  session: s2
+  fact:
+    key: shell_policy
+    value: conditional
+- op: add_fact
+  session: s2
+  fact:
+    key: shell_allowed_commands
+    value: git,docker,pytest
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_contain:
+  - key: shell_policy
+    value: conditional
+  - key: shell_allowed_commands
+    value: git,docker,pytest
+  facts_exclude:
+  - key: shell_policy
+    value: forbidden
+metrics:
+- preference_recall
+- update_accuracy
+hard_gates: []

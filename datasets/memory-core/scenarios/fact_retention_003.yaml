@@ -1,0 +1,51 @@
+scenario_id: fact_retention_003
+title: Fact recall after 3 session boundaries
+category: fact_retention
+difficulty: medium
+description: Fact added in session 1, checked in sessions 2, 3, and 4.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: project_name
+    value: Kettu
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+- op: add_fact
+  session: s2
+  fact:
+    key: temp_fact
+    value: session2-only
+- op: end_session
+  session: s2
+- op: start_session
+  session: s3
+  user: aurum
+- op: add_fact
+  session: s3
+  fact:
+    key: temp_fact
+    value: session3-only
+- op: end_session
+  session: s3
+- op: start_session
+  session: s4
+  user: aurum
+- op: get_context
+  session: s4
+expected_state:
+  session: s4
+  facts_contain:
+  - key: project_name
+    value: Kettu
+  facts_count_min: 1
+metrics:
+- fact_recall
+- long_horizon
+hard_gates: []

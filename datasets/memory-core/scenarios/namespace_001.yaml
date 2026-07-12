@@ -1,0 +1,35 @@
+scenario_id: namespace_001
+title: Same key in different namespaces
+category: namespace_separation
+difficulty: medium
+description: Key 'version' exists in 'frontend' and 'backend' namespaces.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: version
+    value: 2.0.0
+    _namespace: frontend
+- op: add_fact
+  session: s1
+  fact:
+    key: version
+    value: 4.0.0
+    _namespace: backend
+- op: get_context
+  session: s1
+expected_state:
+  session: s1
+  facts_count_min: 2
+  facts_contain:
+  - key: version
+    value: 2.0.0
+  - key: version
+    value: 4.0.0
+metrics:
+- namespace_isolation
+hard_gates:
+- namespace_corruption

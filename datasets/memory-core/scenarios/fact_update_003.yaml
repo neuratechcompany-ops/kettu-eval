@@ -1,0 +1,44 @@
+scenario_id: fact_update_003
+title: Boolean preference flip-flop
+category: fact_update
+difficulty: easy
+description: User toggles shell=True preference. Must return latest boolean.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: allow_shell
+    value: 'false'
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+- op: add_fact
+  session: s2
+  fact:
+    key: allow_shell
+    value: 'true'
+- op: add_fact
+  session: s2
+  fact:
+    key: shell_restriction
+    value: trusted_commands_only
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_contain:
+  - key: allow_shell
+    value: 'true'
+  - key: shell_restriction
+    value: trusted_commands_only
+  facts_exclude:
+  - key: allow_shell
+    value: 'false'
+metrics:
+- update_accuracy
+hard_gates: []

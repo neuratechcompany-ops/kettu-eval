@@ -1,0 +1,48 @@
+scenario_id: fact_update_004
+title: Return to original value after intermediate changes
+category: fact_update
+difficulty: medium
+description: GPT-OSS → DeepSeek → GPT-OSS. Must return GPT-OSS, not DeepSeek.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: model
+    value: gpt-oss
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+- op: add_fact
+  session: s2
+  fact:
+    key: model
+    value: deepseek
+- op: end_session
+  session: s2
+- op: start_session
+  session: s3
+  user: aurum
+- op: add_fact
+  session: s3
+  fact:
+    key: model
+    value: gpt-oss
+- op: get_context
+  session: s3
+expected_state:
+  session: s3
+  facts_contain:
+  - key: model
+    value: gpt-oss
+  facts_exclude:
+  - key: model
+    value: deepseek
+metrics:
+- update_accuracy
+- history_accuracy
+hard_gates: []

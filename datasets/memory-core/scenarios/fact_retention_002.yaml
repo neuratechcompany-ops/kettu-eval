@@ -1,0 +1,45 @@
+scenario_id: fact_retention_002
+title: Multiple facts survive session boundary
+category: fact_retention
+difficulty: easy
+description: 3 facts added in session 1. All must be visible in session 2.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: language
+    value: Russian
+- op: add_fact
+  session: s1
+  fact:
+    key: timezone
+    value: GMT+3
+- op: add_fact
+  session: s1
+  fact:
+    key: os
+    value: macOS
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+- op: get_context
+  session: s2
+expected_state:
+  session: s2
+  facts_count_min: 3
+  facts_contain:
+  - key: language
+    value: Russian
+  - key: timezone
+    value: GMT+3
+  - key: os
+    value: macOS
+metrics:
+- fact_recall
+- fact_count
+hard_gates: []

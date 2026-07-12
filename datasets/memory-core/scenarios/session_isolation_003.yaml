@@ -1,0 +1,31 @@
+scenario_id: session_isolation_003
+title: Session reset clears context
+category: session_isolation
+difficulty: easy
+description: After session reset, old context must not leak into new session.
+operations:
+- op: start_session
+  session: old-session
+  user: aurum
+- op: add_fact
+  session: old-session
+  fact:
+    key: temp_secret
+    value: should-not-leak
+- op: end_session
+  session: old-session
+- op: start_session
+  session: new-session
+  user: aurum
+- op: get_context
+  session: new-session
+expected_state:
+  session: new-session
+  facts_contain:
+  - key: temp_secret
+    value: should-not-leak
+  facts_count_min: 1
+  facts_exclude: []
+metrics:
+- session_isolation
+hard_gates: []

@@ -1,0 +1,50 @@
+scenario_id: contradiction_001
+title: Direct contradiction — latest wins
+category: contradiction
+difficulty: medium
+description: User changes preferred IDE 3 times. Latest must win.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: preferred_ide
+    value: vscode
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+- op: add_fact
+  session: s2
+  fact:
+    key: preferred_ide
+    value: cursor
+- op: end_session
+  session: s2
+- op: start_session
+  session: s3
+  user: aurum
+- op: add_fact
+  session: s3
+  fact:
+    key: preferred_ide
+    value: zed
+- op: get_context
+  session: s3
+expected_state:
+  session: s3
+  facts_contain:
+  - key: preferred_ide
+    value: zed
+  facts_exclude:
+  - key: preferred_ide
+    value: vscode
+  - key: preferred_ide
+    value: cursor
+metrics:
+- contradiction_resolution
+- update_accuracy
+hard_gates: []

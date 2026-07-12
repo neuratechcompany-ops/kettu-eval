@@ -1,0 +1,60 @@
+scenario_id: fact_update_002
+title: Fact updated 4 times — final value only
+category: fact_update
+difficulty: medium
+description: User changes model preference 4 times. Must return final value.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: preferred_model
+    value: qwen
+- op: end_session
+  session: s1
+- op: start_session
+  session: s2
+  user: aurum
+- op: add_fact
+  session: s2
+  fact:
+    key: preferred_model
+    value: gpt-oss
+- op: end_session
+  session: s2
+- op: start_session
+  session: s3
+  user: aurum
+- op: add_fact
+  session: s3
+  fact:
+    key: preferred_model
+    value: deepseek
+- op: end_session
+  session: s3
+- op: start_session
+  session: s4
+  user: aurum
+- op: add_fact
+  session: s4
+  fact:
+    key: preferred_model
+    value: gpt-oss
+- op: get_context
+  session: s4
+expected_state:
+  session: s4
+  facts_contain:
+  - key: preferred_model
+    value: gpt-oss
+  facts_exclude:
+  - key: preferred_model
+    value: qwen
+  - key: preferred_model
+    value: deepseek
+metrics:
+- update_accuracy
+- history_accuracy
+hard_gates: []

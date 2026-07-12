@@ -1,0 +1,141 @@
+scenario_id: noise_001
+title: Signal survives tool output noise
+category: noise_resistance
+difficulty: medium
+description: 5 real facts buried in 20 noisy events.
+operations:
+- op: start_session
+  session: s1
+  user: aurum
+- op: add_fact
+  session: s1
+  fact:
+    key: real_fact_1
+    value: important
+- op: add_event
+  session: s1
+  event:
+    type: tool_output
+    content: 'noise_0: random output data 0'
+- op: add_event
+  session: s1
+  event:
+    type: tool_output
+    content: 'noise_1: random output data 100'
+- op: add_event
+  session: s1
+  event:
+    type: tool_output
+    content: 'noise_2: random output data 200'
+- op: add_event
+  session: s1
+  event:
+    type: tool_output
+    content: 'noise_3: random output data 300'
+- op: add_event
+  session: s1
+  event:
+    type: tool_output
+    content: 'noise_4: random output data 400'
+- op: add_event
+  session: s1
+  event:
+    type: tool_output
+    content: 'noise_5: random output data 500'
+- op: add_event
+  session: s1
+  event:
+    type: tool_output
+    content: 'noise_6: random output data 600'
+- op: add_event
+  session: s1
+  event:
+    type: tool_output
+    content: 'noise_7: random output data 700'
+- op: add_event
+  session: s1
+  event:
+    type: tool_output
+    content: 'noise_8: random output data 800'
+- op: add_event
+  session: s1
+  event:
+    type: tool_output
+    content: 'noise_9: random output data 900'
+- op: add_fact
+  session: s1
+  fact:
+    key: real_fact_2
+    value: critical
+- op: add_event
+  session: s1
+  event:
+    type: log
+    content: 'ERROR: irrelevant error 0'
+- op: add_event
+  session: s1
+  event:
+    type: log
+    content: 'ERROR: irrelevant error 1'
+- op: add_event
+  session: s1
+  event:
+    type: log
+    content: 'ERROR: irrelevant error 2'
+- op: add_event
+  session: s1
+  event:
+    type: log
+    content: 'ERROR: irrelevant error 3'
+- op: add_event
+  session: s1
+  event:
+    type: log
+    content: 'ERROR: irrelevant error 4'
+- op: add_fact
+  session: s1
+  fact:
+    key: real_fact_3
+    value: essential
+- op: add_event
+  session: s1
+  event:
+    type: docker
+    content: 'Container status: running 0'
+- op: add_event
+  session: s1
+  event:
+    type: docker
+    content: 'Container status: running 1'
+- op: add_event
+  session: s1
+  event:
+    type: docker
+    content: 'Container status: running 2'
+- op: add_event
+  session: s1
+  event:
+    type: docker
+    content: 'Container status: running 3'
+- op: add_event
+  session: s1
+  event:
+    type: docker
+    content: 'Container status: running 4'
+- op: get_context
+  session: s1
+expected_state:
+  session: s1
+  facts_contain:
+  - key: real_fact_1
+    value: important
+  - key: real_fact_2
+    value: critical
+  - key: real_fact_3
+    value: essential
+  facts_count_min: 3
+  events_count_min: 20
+metrics:
+- noise_resistance
+- fact_recall
+hard_gates: []
