@@ -1,0 +1,4251 @@
+workflows:
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 42, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise DatabaseError('connection lost on port 3204')\nDatabaseError: connection lost on port 3204\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - DatabaseError
+    - port 3204
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0000
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 43, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise ConnectionRefused('connection lost on port 5006')\nConnectionRefused: connection lost on port 5006\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - ConnectionRefused
+    - port 5006
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0001
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 44, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise TimeoutError('connection lost on port 4143')\nTimeoutError: connection lost on port 4143\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - TimeoutError
+    - port 4143
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0002
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 45, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise DatabaseError('connection lost on port 8543')\nDatabaseError: connection lost on port 8543\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - DatabaseError
+    - port 8543
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0003
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 46, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise ValueError('connection lost on port 3712')\nValueError: connection lost on port 3712\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - ValueError
+    - port 3712
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0004
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 47, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise ValueError('connection lost on port 6456')\nValueError: connection lost on port 6456\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - ValueError
+    - port 6456
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0005
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 48, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise DatabaseError('connection lost on port 3244')\nDatabaseError: connection lost on port 3244\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - DatabaseError
+    - port 3244
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0006
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 49, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise DatabaseError('connection lost on port 4791')\nDatabaseError: connection lost on port 4791\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - DatabaseError
+    - port 4791
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0007
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 50, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise TimeoutError('connection lost on port 7139')\nTimeoutError: connection lost on port 7139\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - TimeoutError
+    - port 7139
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0008
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 51, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise ValueError('connection lost on port 3217')\nValueError: connection lost on port 3217\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - ValueError
+    - port 3217
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0009
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 52, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise ValueError('connection lost on port 4628')\nValueError: connection lost on port 4628\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - ValueError
+    - port 4628
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0010
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 53, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise ValueError('connection lost on port 6436')\nValueError: connection lost on port 6436\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - ValueError
+    - port 6436
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0011
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 54, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise TimeoutError('connection lost on port 6679')\nTimeoutError: connection lost on port 6679\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - TimeoutError
+    - port 6679
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0012
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 55, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise ValueError('connection lost on port 5278')\nValueError: connection lost on port 5278\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - ValueError
+    - port 5278
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0013
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 56, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise DatabaseError('connection lost on port 9216')\nDatabaseError: connection lost on port 9216\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - DatabaseError
+    - port 9216
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0014
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 57, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise TimeoutError('connection lost on port 8719')\nTimeoutError: connection lost on port 8719\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - TimeoutError
+    - port 8719
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0015
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 58, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise KeyError('connection lost on port 5787')\nKeyError: connection lost on port 5787\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - KeyError
+    - port 5787
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0016
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 59, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise ConnectionRefused('connection lost on port 4273')\nConnectionRefused: connection lost on port 4273\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - ConnectionRefused
+    - port 4273
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0017
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 60, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise TimeoutError('connection lost on port 9254')\nTimeoutError: connection lost on port 9254\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - TimeoutError
+    - port 9254
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0018
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 61, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise ConnectionRefused('connection lost on port 3837')\nConnectionRefused: connection lost on port 3837\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - ConnectionRefused
+    - port 3837
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0019
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 62, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise DatabaseError('connection lost on port 6112')\nDatabaseError: connection lost on port 6112\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - DatabaseError
+    - port 6112
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0020
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 63, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise DatabaseError('connection lost on port 5940')\nDatabaseError: connection lost on port 5940\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - DatabaseError
+    - port 5940
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0021
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 64, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise ConnectionRefused('connection lost on port 7945')\nConnectionRefused: connection lost on port 7945\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - ConnectionRefused
+    - port 7945
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0022
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 65, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise ConnectionRefused('connection lost on port 9611')\nConnectionRefused: connection lost on port 9611\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - ConnectionRefused
+    - port 9611
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0023
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 66, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise DatabaseError('connection lost on port 8977')\nDatabaseError: connection lost on port 8977\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - DatabaseError
+    - port 8977
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0024
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 67, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise KeyError('connection lost on port 7392')\nKeyError: connection lost on port 7392\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - KeyError
+    - port 7392
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0025
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 68, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise DatabaseError('connection lost on port 6100')\nDatabaseError: connection lost on port 6100\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - DatabaseError
+    - port 6100
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0026
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 69, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise DatabaseError('connection lost on port 7522')\nDatabaseError: connection lost on port 7522\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - DatabaseError
+    - port 7522
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0027
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 70, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise ConnectionRefused('connection lost on port 9794')\nConnectionRefused: connection lost on port 9794\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - ConnectionRefused
+    - port 9794
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0028
+- category: debugging
+  context: "Traceback (most recent call last):\n  File 'worker.py', line 71, in process\n    result = db.query(sql)\n  File 'db.py', line 18, in query\n    raise ValueError('connection lost on port 5962')\nValueError: connection lost on port 5962\n"
+  goal: What is the root cause of the error?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - ValueError
+    - port 5962
+    - db.py
+    forbidden_hallucinations:
+    - auth.py
+    - port 1234
+    - memory error
+  workflow_id: debugging-0029
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:142\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:88\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0030
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:143\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:89\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0031
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:144\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:90\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0032
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:145\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:91\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0033
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:146\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:92\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0034
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:147\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:93\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0035
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:148\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:94\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0036
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:149\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:95\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0037
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:150\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:96\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0038
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:151\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:97\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0039
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:152\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:98\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0040
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:153\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:99\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0041
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:154\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:100\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0042
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:155\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:101\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0043
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:156\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:102\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0044
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:157\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:103\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0045
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:158\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:104\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0046
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:159\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:105\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0047
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:160\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:106\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0048
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:161\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:107\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0049
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:162\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:108\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0050
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:163\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:109\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0051
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:164\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:110\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0052
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:165\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:111\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0053
+- category: test_fixing
+  context: "test_login PASSED\ntest_db FAILED: assert users[0]['name'] == 'Alice'\n  got: 'Bob'\n  at tests/test_db.py:166\ntest_api PASSED\ntest_cache FAILED: KeyError 'missing_key'\n  at tests/test_cache.py:112\n===== 2 passed, 2 failed =====\n"
+  goal: Which tests failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - test_db
+    - test_cache
+    - Alice
+    - Bob
+    - KeyError
+    - missing_key
+    forbidden_hallucinations:
+    - test_login
+    - test_api
+    - AssertionError
+  workflow_id: test_fixing-0054
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    e5f6g7h8      api:2.0        Exited ({ec}) 2m ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (143)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0055
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    e5f6g7h8      api:2.0        Exited ({ec}) 2m ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (143)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0056
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    e5f6g7h8      api:2.0        Exited ({ec}) 2m ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (1)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0057
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    e5f6g7h8      api:2.0        Exited ({ec}) 2m ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (137)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0058
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    e5f6g7h8      api:2.0        Exited ({ec}) 2m ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (1)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0059
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    i9j0k1l2      worker:1.5     Restarting (1) 30s ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (137)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0060
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    i9j0k1l2      worker:1.5     Restarting (1) 30s ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (137)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0061
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    i9j0k1l2      worker:1.5     Restarting (1) 30s ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (1)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0062
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    e5f6g7h8      api:2.0        Exited ({ec}) 2m ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (137)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0063
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    i9j0k1l2      worker:1.5     Restarting (1) 30s ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (143)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0064
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    e5f6g7h8      api:2.0        Exited ({ec}) 2m ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (143)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0065
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    e5f6g7h8      api:2.0        Exited ({ec}) 2m ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (143)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0066
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    e5f6g7h8      api:2.0        Exited ({ec}) 2m ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (143)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0067
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    i9j0k1l2      worker:1.5     Restarting (1) 30s ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (1)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0068
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    i9j0k1l2      worker:1.5     Restarting (1) 30s ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (137)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0069
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    e5f6g7h8      api:2.0        Exited ({ec}) 2m ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (143)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0070
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    i9j0k1l2      worker:1.5     Restarting (1) 30s ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (143)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0071
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    e5f6g7h8      api:2.0        Exited ({ec}) 2m ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (1)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0072
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    i9j0k1l2      worker:1.5     Restarting (1) 30s ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (1)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0073
+- category: docker
+  context: 'docker ps:
+
+    CONTAINER ID  IMAGE          STATUS
+
+    a1b2c3d4      nginx:latest   Up 3h
+
+    i9j0k1l2      worker:1.5     Restarting (1) 30s ago
+
+
+    docker logs e5f6g7h8:
+
+    ERROR: connection refused to postgresql://db:5432
+
+    ERROR: max retries exceeded
+
+    '
+  goal: Which container failed and why?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - e5f6g7h8
+    - connection refused
+    - postgresql
+    - '5432'
+    - Exited (137)
+    forbidden_hallucinations:
+    - nginx
+    - a1b2c3d4
+    - memory leak
+  workflow_id: docker-0074
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0075
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0076
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0077
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0078
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0079
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0080
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0081
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0082
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0083
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0084
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0085
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0086
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0087
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0088
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0089
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0090
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0091
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0092
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0093
+- category: kubernetes
+  context: 'kubectl get pods:
+
+    NAME                    READY  STATUS
+
+    api-deploy-7d4f-abcde   1/1    Running
+
+    worker-sts-0            0/1    CrashLoopBackOff
+
+    cache-deploy-3f2a-xyz   1/1    Running
+
+
+    kubectl logs worker-sts-0:
+
+    Error: OOMKilled (exit code 137)
+
+    Memory limit: 256Mi
+
+    '
+  goal: Which pod is failing and what is the cause?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - worker-sts-0
+    - CrashLoopBackOff
+    - OOMKilled
+    - 256Mi
+    - exit code 137
+    forbidden_hallucinations:
+    - api-deploy
+    - cache-deploy
+    - NetworkError
+  workflow_id: kubernetes-0094
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: Dockerfile\n\ngit diff Dockerfile:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - Dockerfile
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0095
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: Dockerfile\n\ngit diff Dockerfile:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - Dockerfile
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0096
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: config.yaml\n\ngit diff config.yaml:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - config.yaml
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0097
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: src/db.py\n\ngit diff src/db.py:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - src/db.py
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0098
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: src/db.py\n\ngit diff src/db.py:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - src/db.py
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0099
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: Dockerfile\n\ngit diff Dockerfile:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - Dockerfile
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0100
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: src/auth.py\n\ngit diff src/auth.py:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - src/auth.py
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0101
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: src/auth.py\n\ngit diff src/auth.py:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - src/auth.py
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0102
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: src/auth.py\n\ngit diff src/auth.py:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - src/auth.py
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0103
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: src/db.py\n\ngit diff src/db.py:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - src/db.py
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0104
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: src/db.py\n\ngit diff src/db.py:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - src/db.py
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0105
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: Dockerfile\n\ngit diff Dockerfile:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - Dockerfile
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0106
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: src/auth.py\n\ngit diff src/auth.py:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - src/auth.py
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0107
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: Dockerfile\n\ngit diff Dockerfile:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - Dockerfile
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0108
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: Dockerfile\n\ngit diff Dockerfile:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - Dockerfile
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0109
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: Dockerfile\n\ngit diff Dockerfile:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - Dockerfile
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0110
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: config.yaml\n\ngit diff config.yaml:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - config.yaml
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0111
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: src/auth.py\n\ngit diff src/auth.py:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - src/auth.py
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0112
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: src/auth.py\n\ngit diff src/auth.py:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - src/auth.py
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0113
+- category: git
+  context: "git status:\nOn branch main\nChanges not staged for commit:\n  modified: config.yaml\n\ngit diff config.yaml:\n-def authenticate(user, pw):\n+def authenticate(user, pw, mfa=False):\n     if not user: raise AuthError\n+    if mfa: return verify_mfa(user)\n     return verify(user, pw)\n"
+  goal: What file was changed and what was added?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - config.yaml
+    - mfa
+    - authenticate
+    - verify_mfa
+    forbidden_hallucinations:
+    - deleted
+    - rewrite
+    - new file
+  workflow_id: git-0114
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 498,\n  \"message\": \"service unavailable\",\n  \"request_id\": \"req-2827\",\n  \"details\": {\n    \"retry_after\": 19\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '498'
+    - service unavailable
+    - req-2827
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0115
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 455,\n  \"message\": \"invalid token\",\n  \"request_id\": \"req-8433\",\n  \"details\": {\n    \"retry_after\": 1\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '455'
+    - invalid token
+    - req-8433
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0116
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 492,\n  \"message\": \"service unavailable\",\n  \"request_id\": \"req-9201\",\n  \"details\": {\n    \"retry_after\": 49\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '492'
+    - service unavailable
+    - req-9201
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0117
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 422,\n  \"message\": \"rate limit exceeded\",\n  \"request_id\": \"req-5889\",\n  \"details\": {\n    \"retry_after\": 54\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '422'
+    - rate limit exceeded
+    - req-5889
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0118
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 481,\n  \"message\": \"invalid token\",\n  \"request_id\": \"req-3504\",\n  \"details\": {\n    \"retry_after\": 24\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '481'
+    - invalid token
+    - req-3504
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0119
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 497,\n  \"message\": \"invalid token\",\n  \"request_id\": \"req-9837\",\n  \"details\": {\n    \"retry_after\": 50\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '497'
+    - invalid token
+    - req-9837
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0120
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 467,\n  \"message\": \"rate limit exceeded\",\n  \"request_id\": \"req-6310\",\n  \"details\": {\n    \"retry_after\": 32\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '467'
+    - rate limit exceeded
+    - req-6310
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0121
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 402,\n  \"message\": \"rate limit exceeded\",\n  \"request_id\": \"req-6947\",\n  \"details\": {\n    \"retry_after\": 57\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '402'
+    - rate limit exceeded
+    - req-6947
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0122
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 503,\n  \"message\": \"service unavailable\",\n  \"request_id\": \"req-4923\",\n  \"details\": {\n    \"retry_after\": 4\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '503'
+    - service unavailable
+    - req-4923
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0123
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 430,\n  \"message\": \"rate limit exceeded\",\n  \"request_id\": \"req-2403\",\n  \"details\": {\n    \"retry_after\": 47\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '430'
+    - rate limit exceeded
+    - req-2403
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0124
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 462,\n  \"message\": \"rate limit exceeded\",\n  \"request_id\": \"req-9727\",\n  \"details\": {\n    \"retry_after\": 50\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '462'
+    - rate limit exceeded
+    - req-9727
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0125
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 416,\n  \"message\": \"invalid token\",\n  \"request_id\": \"req-8787\",\n  \"details\": {\n    \"retry_after\": 36\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '416'
+    - invalid token
+    - req-8787
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0126
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 421,\n  \"message\": \"service unavailable\",\n  \"request_id\": \"req-9645\",\n  \"details\": {\n    \"retry_after\": 56\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '421'
+    - service unavailable
+    - req-9645
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0127
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 477,\n  \"message\": \"timeout\",\n  \"request_id\": \"req-4470\",\n  \"details\": {\n    \"retry_after\": 60\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '477'
+    - timeout
+    - req-4470
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0128
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 469,\n  \"message\": \"invalid token\",\n  \"request_id\": \"req-6107\",\n  \"details\": {\n    \"retry_after\": 26\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '469'
+    - invalid token
+    - req-6107
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0129
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 485,\n  \"message\": \"service unavailable\",\n  \"request_id\": \"req-8177\",\n  \"details\": {\n    \"retry_after\": 58\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '485'
+    - service unavailable
+    - req-8177
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0130
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 466,\n  \"message\": \"timeout\",\n  \"request_id\": \"req-2982\",\n  \"details\": {\n    \"retry_after\": 16\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '466'
+    - timeout
+    - req-2982
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0131
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 428,\n  \"message\": \"rate limit exceeded\",\n  \"request_id\": \"req-6539\",\n  \"details\": {\n    \"retry_after\": 2\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '428'
+    - rate limit exceeded
+    - req-6539
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0132
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 475,\n  \"message\": \"invalid token\",\n  \"request_id\": \"req-4608\",\n  \"details\": {\n    \"retry_after\": 1\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '475'
+    - invalid token
+    - req-4608
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0133
+- category: json_api
+  context: "{\n  \"status\": \"error\",\n  \"code\": 409,\n  \"message\": \"rate limit exceeded\",\n  \"request_id\": \"req-4750\",\n  \"details\": {\n    \"retry_after\": 5\n  }\n}"
+  goal: What is the error code and message in this API response?
+  ground_truth:
+    difficulty: easy
+    expected_facts:
+    - '409'
+    - rate limit exceeded
+    - req-4750
+    forbidden_hallucinations:
+    - '200'
+    - ok
+    - success
+  workflow_id: json_api-0134
+- category: logs
+  context: '[2026-07-12 10:00:00] INFO api-gateway: starting
+
+    [10:00:05] ERROR api-gateway: connection timeout to backend:5706
+
+    [10:00:10] WARN api-gateway: retry 1/3
+
+    [10:00:15] ERROR api-gateway: max retries exceeded
+
+    [10:00:20] FATAL api-gateway: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - api-gateway
+    - backend:5706
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0135
+- category: logs
+  context: '[2026-07-12 10:01:00] INFO api-gateway: starting
+
+    [10:01:05] ERROR api-gateway: connection timeout to backend:7211
+
+    [10:01:10] WARN api-gateway: retry 1/3
+
+    [10:01:15] ERROR api-gateway: max retries exceeded
+
+    [10:01:20] FATAL api-gateway: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - api-gateway
+    - backend:7211
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0136
+- category: logs
+  context: '[2026-07-12 10:02:00] INFO auth-service: starting
+
+    [10:02:05] ERROR auth-service: connection timeout to backend:5281
+
+    [10:02:10] WARN auth-service: retry 1/3
+
+    [10:02:15] ERROR auth-service: max retries exceeded
+
+    [10:02:20] FATAL auth-service: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - auth-service
+    - backend:5281
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0137
+- category: logs
+  context: '[2026-07-12 10:03:00] INFO cache-layer: starting
+
+    [10:03:05] ERROR cache-layer: connection timeout to backend:4755
+
+    [10:03:10] WARN cache-layer: retry 1/3
+
+    [10:03:15] ERROR cache-layer: max retries exceeded
+
+    [10:03:20] FATAL cache-layer: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - cache-layer
+    - backend:4755
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0138
+- category: logs
+  context: '[2026-07-12 10:04:00] INFO auth-service: starting
+
+    [10:04:05] ERROR auth-service: connection timeout to backend:8925
+
+    [10:04:10] WARN auth-service: retry 1/3
+
+    [10:04:15] ERROR auth-service: max retries exceeded
+
+    [10:04:20] FATAL auth-service: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - auth-service
+    - backend:8925
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0139
+- category: logs
+  context: '[2026-07-12 10:05:00] INFO cache-layer: starting
+
+    [10:05:05] ERROR cache-layer: connection timeout to backend:4990
+
+    [10:05:10] WARN cache-layer: retry 1/3
+
+    [10:05:15] ERROR cache-layer: max retries exceeded
+
+    [10:05:20] FATAL cache-layer: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - cache-layer
+    - backend:4990
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0140
+- category: logs
+  context: '[2026-07-12 10:06:00] INFO cache-layer: starting
+
+    [10:06:05] ERROR cache-layer: connection timeout to backend:9615
+
+    [10:06:10] WARN cache-layer: retry 1/3
+
+    [10:06:15] ERROR cache-layer: max retries exceeded
+
+    [10:06:20] FATAL cache-layer: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - cache-layer
+    - backend:9615
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0141
+- category: logs
+  context: '[2026-07-12 10:07:00] INFO cache-layer: starting
+
+    [10:07:05] ERROR cache-layer: connection timeout to backend:4559
+
+    [10:07:10] WARN cache-layer: retry 1/3
+
+    [10:07:15] ERROR cache-layer: max retries exceeded
+
+    [10:07:20] FATAL cache-layer: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - cache-layer
+    - backend:4559
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0142
+- category: logs
+  context: '[2026-07-12 10:08:00] INFO api-gateway: starting
+
+    [10:08:05] ERROR api-gateway: connection timeout to backend:3794
+
+    [10:08:10] WARN api-gateway: retry 1/3
+
+    [10:08:15] ERROR api-gateway: max retries exceeded
+
+    [10:08:20] FATAL api-gateway: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - api-gateway
+    - backend:3794
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0143
+- category: logs
+  context: '[2026-07-12 10:09:00] INFO cache-layer: starting
+
+    [10:09:05] ERROR cache-layer: connection timeout to backend:5902
+
+    [10:09:10] WARN cache-layer: retry 1/3
+
+    [10:09:15] ERROR cache-layer: max retries exceeded
+
+    [10:09:20] FATAL cache-layer: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - cache-layer
+    - backend:5902
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0144
+- category: logs
+  context: '[2026-07-12 10:10:00] INFO cache-layer: starting
+
+    [10:10:05] ERROR cache-layer: connection timeout to backend:6367
+
+    [10:10:10] WARN cache-layer: retry 1/3
+
+    [10:10:15] ERROR cache-layer: max retries exceeded
+
+    [10:10:20] FATAL cache-layer: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - cache-layer
+    - backend:6367
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0145
+- category: logs
+  context: '[2026-07-12 10:11:00] INFO cache-layer: starting
+
+    [10:11:05] ERROR cache-layer: connection timeout to backend:8972
+
+    [10:11:10] WARN cache-layer: retry 1/3
+
+    [10:11:15] ERROR cache-layer: max retries exceeded
+
+    [10:11:20] FATAL cache-layer: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - cache-layer
+    - backend:8972
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0146
+- category: logs
+  context: '[2026-07-12 10:12:00] INFO api-gateway: starting
+
+    [10:12:05] ERROR api-gateway: connection timeout to backend:8516
+
+    [10:12:10] WARN api-gateway: retry 1/3
+
+    [10:12:15] ERROR api-gateway: max retries exceeded
+
+    [10:12:20] FATAL api-gateway: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - api-gateway
+    - backend:8516
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0147
+- category: logs
+  context: '[2026-07-12 10:13:00] INFO api-gateway: starting
+
+    [10:13:05] ERROR api-gateway: connection timeout to backend:3496
+
+    [10:13:10] WARN api-gateway: retry 1/3
+
+    [10:13:15] ERROR api-gateway: max retries exceeded
+
+    [10:13:20] FATAL api-gateway: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - api-gateway
+    - backend:3496
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0148
+- category: logs
+  context: '[2026-07-12 10:14:00] INFO cache-layer: starting
+
+    [10:14:05] ERROR cache-layer: connection timeout to backend:8965
+
+    [10:14:10] WARN cache-layer: retry 1/3
+
+    [10:14:15] ERROR cache-layer: max retries exceeded
+
+    [10:14:20] FATAL cache-layer: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - cache-layer
+    - backend:8965
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0149
+- category: logs
+  context: '[2026-07-12 10:15:00] INFO db-proxy: starting
+
+    [10:15:05] ERROR db-proxy: connection timeout to backend:9558
+
+    [10:15:10] WARN db-proxy: retry 1/3
+
+    [10:15:15] ERROR db-proxy: max retries exceeded
+
+    [10:15:20] FATAL db-proxy: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - db-proxy
+    - backend:9558
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0150
+- category: logs
+  context: '[2026-07-12 10:16:00] INFO api-gateway: starting
+
+    [10:16:05] ERROR api-gateway: connection timeout to backend:5036
+
+    [10:16:10] WARN api-gateway: retry 1/3
+
+    [10:16:15] ERROR api-gateway: max retries exceeded
+
+    [10:16:20] FATAL api-gateway: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - api-gateway
+    - backend:5036
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0151
+- category: logs
+  context: '[2026-07-12 10:17:00] INFO auth-service: starting
+
+    [10:17:05] ERROR auth-service: connection timeout to backend:4558
+
+    [10:17:10] WARN auth-service: retry 1/3
+
+    [10:17:15] ERROR auth-service: max retries exceeded
+
+    [10:17:20] FATAL auth-service: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - auth-service
+    - backend:4558
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0152
+- category: logs
+  context: '[2026-07-12 10:18:00] INFO cache-layer: starting
+
+    [10:18:05] ERROR cache-layer: connection timeout to backend:4148
+
+    [10:18:10] WARN cache-layer: retry 1/3
+
+    [10:18:15] ERROR cache-layer: max retries exceeded
+
+    [10:18:20] FATAL cache-layer: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - cache-layer
+    - backend:4148
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0153
+- category: logs
+  context: '[2026-07-12 10:19:00] INFO cache-layer: starting
+
+    [10:19:05] ERROR cache-layer: connection timeout to backend:4503
+
+    [10:19:10] WARN cache-layer: retry 1/3
+
+    [10:19:15] ERROR cache-layer: max retries exceeded
+
+    [10:19:20] FATAL cache-layer: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - cache-layer
+    - backend:4503
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0154
+- category: logs
+  context: '[2026-07-12 10:20:00] INFO db-proxy: starting
+
+    [10:20:05] ERROR db-proxy: connection timeout to backend:6789
+
+    [10:20:10] WARN db-proxy: retry 1/3
+
+    [10:20:15] ERROR db-proxy: max retries exceeded
+
+    [10:20:20] FATAL db-proxy: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - db-proxy
+    - backend:6789
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0155
+- category: logs
+  context: '[2026-07-12 10:21:00] INFO auth-service: starting
+
+    [10:21:05] ERROR auth-service: connection timeout to backend:3617
+
+    [10:21:10] WARN auth-service: retry 1/3
+
+    [10:21:15] ERROR auth-service: max retries exceeded
+
+    [10:21:20] FATAL auth-service: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - auth-service
+    - backend:3617
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0156
+- category: logs
+  context: '[2026-07-12 10:22:00] INFO cache-layer: starting
+
+    [10:22:05] ERROR cache-layer: connection timeout to backend:9619
+
+    [10:22:10] WARN cache-layer: retry 1/3
+
+    [10:22:15] ERROR cache-layer: max retries exceeded
+
+    [10:22:20] FATAL cache-layer: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - cache-layer
+    - backend:9619
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0157
+- category: logs
+  context: '[2026-07-12 10:23:00] INFO api-gateway: starting
+
+    [10:23:05] ERROR api-gateway: connection timeout to backend:3414
+
+    [10:23:10] WARN api-gateway: retry 1/3
+
+    [10:23:15] ERROR api-gateway: max retries exceeded
+
+    [10:23:20] FATAL api-gateway: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - api-gateway
+    - backend:3414
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0158
+- category: logs
+  context: '[2026-07-12 10:24:00] INFO api-gateway: starting
+
+    [10:24:05] ERROR api-gateway: connection timeout to backend:3764
+
+    [10:24:10] WARN api-gateway: retry 1/3
+
+    [10:24:15] ERROR api-gateway: max retries exceeded
+
+    [10:24:20] FATAL api-gateway: shutting down
+
+    '
+  goal: What service failed and on which port?
+  ground_truth:
+    difficulty: medium
+    expected_facts:
+    - api-gateway
+    - backend:3764
+    - max retries exceeded
+    - shutting down
+    forbidden_hallucinations:
+    - deploy
+    - restart
+    - success
+  workflow_id: logs-0159
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-97.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-4872\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0160
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-22.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-7658\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0161
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-63.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-8886\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0162
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-28.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-7570\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0163
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-8.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-3697\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0164
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-49.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-1035\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0165
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-50.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-5345\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0166
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-59.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-5673\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0167
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-55.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-8973\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0168
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-20.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-4111\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0169
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-38.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-4566\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0170
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-8.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-9883\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0171
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-8.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-6138\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0172
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-8.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-1821\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0173
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-75.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-8811\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0174
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-65.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-9701\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0175
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-21.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-1931\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0176
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-66.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-2312\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0177
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-24.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-2122\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0178
+- category: multi_file
+  context: "File: src/auth.py\ndef login(user, pw):\n    return db.verify(user, pw)\n\ndef refresh(token):\n    return jwt.decode(token)\n\nFile: config.yaml\ndatabase:\n  host: db-77.example.com\n  port: 5432\nsecurity:\n  jwt_secret: s3cret-key-2113\n"
+  goal: Which file contains authentication logic and what database host is configured?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - auth.py
+    - login
+    - db-
+    - '5432'
+    - config.yaml
+    forbidden_hallucinations:
+    - worker.py
+    - redis
+    - '8080'
+  workflow_id: multi_file-0179
+- category: conversation
+  context: 'User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: I see error in production. Decision: rollback to v1.4.6
+
+    Agent: Rolling back... Done.
+
+    User: What version are we on now?
+
+    Agent: v1.2.9
+
+    User: Requirement: add healthcheck endpoint before next deploy
+
+    '
+  goal: What was the decision made and what is the current requirement?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rollback
+    - healthcheck endpoint
+    - Requirement
+    - Decision
+    forbidden_hallucinations:
+    - deploy
+    - scale up
+    - database
+  workflow_id: conversation-0180
+- category: conversation
+  context: 'User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: I see error in production. Decision: rollback to v1.4.9
+
+    Agent: Rolling back... Done.
+
+    User: What version are we on now?
+
+    Agent: v1.1.9
+
+    User: Requirement: add healthcheck endpoint before next deploy
+
+    '
+  goal: What was the decision made and what is the current requirement?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rollback
+    - healthcheck endpoint
+    - Requirement
+    - Decision
+    forbidden_hallucinations:
+    - deploy
+    - scale up
+    - database
+  workflow_id: conversation-0181
+- category: conversation
+  context: 'User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: I see error in production. Decision: rollback to v1.2.6
+
+    Agent: Rolling back... Done.
+
+    User: What version are we on now?
+
+    Agent: v1.9.5
+
+    User: Requirement: add healthcheck endpoint before next deploy
+
+    '
+  goal: What was the decision made and what is the current requirement?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rollback
+    - healthcheck endpoint
+    - Requirement
+    - Decision
+    forbidden_hallucinations:
+    - deploy
+    - scale up
+    - database
+  workflow_id: conversation-0182
+- category: conversation
+  context: 'User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: I see error in production. Decision: rollback to v1.5.3
+
+    Agent: Rolling back... Done.
+
+    User: What version are we on now?
+
+    Agent: v1.6.3
+
+    User: Requirement: add healthcheck endpoint before next deploy
+
+    '
+  goal: What was the decision made and what is the current requirement?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rollback
+    - healthcheck endpoint
+    - Requirement
+    - Decision
+    forbidden_hallucinations:
+    - deploy
+    - scale up
+    - database
+  workflow_id: conversation-0183
+- category: conversation
+  context: 'User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: I see error in production. Decision: rollback to v1.5.6
+
+    Agent: Rolling back... Done.
+
+    User: What version are we on now?
+
+    Agent: v1.3.4
+
+    User: Requirement: add healthcheck endpoint before next deploy
+
+    '
+  goal: What was the decision made and what is the current requirement?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rollback
+    - healthcheck endpoint
+    - Requirement
+    - Decision
+    forbidden_hallucinations:
+    - deploy
+    - scale up
+    - database
+  workflow_id: conversation-0184
+- category: conversation
+  context: 'User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: I see error in production. Decision: rollback to v1.8.5
+
+    Agent: Rolling back... Done.
+
+    User: What version are we on now?
+
+    Agent: v1.2.0
+
+    User: Requirement: add healthcheck endpoint before next deploy
+
+    '
+  goal: What was the decision made and what is the current requirement?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rollback
+    - healthcheck endpoint
+    - Requirement
+    - Decision
+    forbidden_hallucinations:
+    - deploy
+    - scale up
+    - database
+  workflow_id: conversation-0185
+- category: conversation
+  context: 'User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: I see error in production. Decision: rollback to v1.8.9
+
+    Agent: Rolling back... Done.
+
+    User: What version are we on now?
+
+    Agent: v1.2.1
+
+    User: Requirement: add healthcheck endpoint before next deploy
+
+    '
+  goal: What was the decision made and what is the current requirement?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rollback
+    - healthcheck endpoint
+    - Requirement
+    - Decision
+    forbidden_hallucinations:
+    - deploy
+    - scale up
+    - database
+  workflow_id: conversation-0186
+- category: conversation
+  context: 'User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: I see error in production. Decision: rollback to v1.9.3
+
+    Agent: Rolling back... Done.
+
+    User: What version are we on now?
+
+    Agent: v1.9.4
+
+    User: Requirement: add healthcheck endpoint before next deploy
+
+    '
+  goal: What was the decision made and what is the current requirement?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rollback
+    - healthcheck endpoint
+    - Requirement
+    - Decision
+    forbidden_hallucinations:
+    - deploy
+    - scale up
+    - database
+  workflow_id: conversation-0187
+- category: conversation
+  context: 'User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: I see error in production. Decision: rollback to v1.3.5
+
+    Agent: Rolling back... Done.
+
+    User: What version are we on now?
+
+    Agent: v1.2.3
+
+    User: Requirement: add healthcheck endpoint before next deploy
+
+    '
+  goal: What was the decision made and what is the current requirement?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rollback
+    - healthcheck endpoint
+    - Requirement
+    - Decision
+    forbidden_hallucinations:
+    - deploy
+    - scale up
+    - database
+  workflow_id: conversation-0188
+- category: conversation
+  context: 'User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: What''s the deployment status?
+
+    Agent: Deployed to staging. All pods healthy.
+
+    User: I see error in production. Decision: rollback to v1.6.4
+
+    Agent: Rolling back... Done.
+
+    User: What version are we on now?
+
+    Agent: v1.3.7
+
+    User: Requirement: add healthcheck endpoint before next deploy
+
+    '
+  goal: What was the decision made and what is the current requirement?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rollback
+    - healthcheck endpoint
+    - Requirement
+    - Decision
+    forbidden_hallucinations:
+    - deploy
+    - scale up
+    - database
+  workflow_id: conversation-0189
+- category: mixed
+  context: 'git status: modified src/api.py
+
+    pytest: 2 failed — test_rate_limit, test_auth_token
+
+    docker logs api: ERROR rate limit exceeded for user 953
+
+    kubectl get pods: api-deploy CrashLoopBackOff
+
+    '
+  goal: What is the root cause across all tools?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rate limit
+    - api
+    - CrashLoopBackOff
+    - test_rate_limit
+    forbidden_hallucinations:
+    - memory
+    - database
+    - network partition
+  workflow_id: mixed-0190
+- category: mixed
+  context: 'git status: modified src/api.py
+
+    pytest: 2 failed — test_rate_limit, test_auth_token
+
+    docker logs api: ERROR rate limit exceeded for user 656
+
+    kubectl get pods: api-deploy CrashLoopBackOff
+
+    '
+  goal: What is the root cause across all tools?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rate limit
+    - api
+    - CrashLoopBackOff
+    - test_rate_limit
+    forbidden_hallucinations:
+    - memory
+    - database
+    - network partition
+  workflow_id: mixed-0191
+- category: mixed
+  context: 'git status: modified src/api.py
+
+    pytest: 2 failed — test_rate_limit, test_auth_token
+
+    docker logs api: ERROR rate limit exceeded for user 820
+
+    kubectl get pods: api-deploy CrashLoopBackOff
+
+    '
+  goal: What is the root cause across all tools?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rate limit
+    - api
+    - CrashLoopBackOff
+    - test_rate_limit
+    forbidden_hallucinations:
+    - memory
+    - database
+    - network partition
+  workflow_id: mixed-0192
+- category: mixed
+  context: 'git status: modified src/api.py
+
+    pytest: 2 failed — test_rate_limit, test_auth_token
+
+    docker logs api: ERROR rate limit exceeded for user 409
+
+    kubectl get pods: api-deploy CrashLoopBackOff
+
+    '
+  goal: What is the root cause across all tools?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rate limit
+    - api
+    - CrashLoopBackOff
+    - test_rate_limit
+    forbidden_hallucinations:
+    - memory
+    - database
+    - network partition
+  workflow_id: mixed-0193
+- category: mixed
+  context: 'git status: modified src/api.py
+
+    pytest: 2 failed — test_rate_limit, test_auth_token
+
+    docker logs api: ERROR rate limit exceeded for user 726
+
+    kubectl get pods: api-deploy CrashLoopBackOff
+
+    '
+  goal: What is the root cause across all tools?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rate limit
+    - api
+    - CrashLoopBackOff
+    - test_rate_limit
+    forbidden_hallucinations:
+    - memory
+    - database
+    - network partition
+  workflow_id: mixed-0194
+- category: mixed
+  context: 'git status: modified src/api.py
+
+    pytest: 2 failed — test_rate_limit, test_auth_token
+
+    docker logs api: ERROR rate limit exceeded for user 926
+
+    kubectl get pods: api-deploy CrashLoopBackOff
+
+    '
+  goal: What is the root cause across all tools?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rate limit
+    - api
+    - CrashLoopBackOff
+    - test_rate_limit
+    forbidden_hallucinations:
+    - memory
+    - database
+    - network partition
+  workflow_id: mixed-0195
+- category: mixed
+  context: 'git status: modified src/api.py
+
+    pytest: 2 failed — test_rate_limit, test_auth_token
+
+    docker logs api: ERROR rate limit exceeded for user 769
+
+    kubectl get pods: api-deploy CrashLoopBackOff
+
+    '
+  goal: What is the root cause across all tools?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rate limit
+    - api
+    - CrashLoopBackOff
+    - test_rate_limit
+    forbidden_hallucinations:
+    - memory
+    - database
+    - network partition
+  workflow_id: mixed-0196
+- category: mixed
+  context: 'git status: modified src/api.py
+
+    pytest: 2 failed — test_rate_limit, test_auth_token
+
+    docker logs api: ERROR rate limit exceeded for user 641
+
+    kubectl get pods: api-deploy CrashLoopBackOff
+
+    '
+  goal: What is the root cause across all tools?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rate limit
+    - api
+    - CrashLoopBackOff
+    - test_rate_limit
+    forbidden_hallucinations:
+    - memory
+    - database
+    - network partition
+  workflow_id: mixed-0197
+- category: mixed
+  context: 'git status: modified src/api.py
+
+    pytest: 2 failed — test_rate_limit, test_auth_token
+
+    docker logs api: ERROR rate limit exceeded for user 108
+
+    kubectl get pods: api-deploy CrashLoopBackOff
+
+    '
+  goal: What is the root cause across all tools?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rate limit
+    - api
+    - CrashLoopBackOff
+    - test_rate_limit
+    forbidden_hallucinations:
+    - memory
+    - database
+    - network partition
+  workflow_id: mixed-0198
+- category: mixed
+  context: 'git status: modified src/api.py
+
+    pytest: 2 failed — test_rate_limit, test_auth_token
+
+    docker logs api: ERROR rate limit exceeded for user 783
+
+    kubectl get pods: api-deploy CrashLoopBackOff
+
+    '
+  goal: What is the root cause across all tools?
+  ground_truth:
+    difficulty: hard
+    expected_facts:
+    - rate limit
+    - api
+    - CrashLoopBackOff
+    - test_rate_limit
+    forbidden_hallucinations:
+    - memory
+    - database
+    - network partition
+  workflow_id: mixed-0199

@@ -1,0 +1,16 @@
+categories:
+  conversation: 10
+  debugging: 30
+  docker: 20
+  git: 20
+  json_api: 20
+  kubernetes: 20
+  logs: 25
+  mixed: 10
+  multi_file: 20
+  test_fixing: 25
+checksum: sha256:64a1f6c87bc05c77
+created_at: '2026-07-12'
+dataset_id: agent-workflows-v1
+version: 1.0.0
+workflow_count: 200
