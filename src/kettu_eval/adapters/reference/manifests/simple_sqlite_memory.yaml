@@ -1,0 +1,26 @@
+name: simple-sqlite-memory
+version: 0.1.0
+adapter_type: memory
+transport: direct
+capabilities:
+  start_session: true
+  add_event: true
+  add_fact: true
+  search: true
+  get_context: true
+  end_session: true
+  fact_update: true
+  fact_delete: true
+  session_isolation: true
+  restart_recovery: true
+  project_isolation: false
+  semantic_search: false
+  context_builder: false
+  compression: false
+  ttl: false
+limitations:
+  - "No semantic search — exact substring only"
+  - "No project isolation"
+  - "No TTL/expiry"
+  - "No embeddings or vector search"
+timeout_seconds: 10

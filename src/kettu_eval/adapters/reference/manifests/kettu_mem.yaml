@@ -1,0 +1,27 @@
+name: kettu-mem
+version: 0.2.1
+adapter_type: memory
+transport: http
+endpoint: http://127.0.0.1:8765
+capabilities:
+  start_session: true
+  add_event: true
+  add_fact: true
+  search: true
+  semantic_search: true
+  get_context: true
+  context_builder: true
+  end_session: true
+  session_isolation: true
+  project_isolation: true
+  fact_update: true
+  fact_delete: false
+  restart_recovery: true
+  compression: true
+  ttl: false
+limitations:
+  - "No TTL/expiry support"
+  - "No fact deletion"
+timeout_seconds: 30
+concurrency:
+  mode: single_writer
