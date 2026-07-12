@@ -1,3 +1,5 @@
+AUTHORS.md
+LICENSE
 README.md
 pyproject.toml
 src/kettu_eval/__init__.py

@@ -1,0 +1,29 @@
+name: Adapter Request
+description: Propose a new adapter for Kettu Eval
+labels: [adapter, enhancement]
+body:
+  - type: input
+    attributes:
+      label: System name
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: URL
+  - type: dropdown
+    attributes:
+      label: Adapter type
+      options: [memory, context, retrieval, agent]
+  - type: input
+    attributes:
+      label: Transport
+      placeholder: "http, direct, stdio, grpc"
+  - type: textarea
+    attributes:
+      label: Capabilities
+  - type: input
+    attributes:
+      label: License
+  - type: textarea
+    attributes:
+      label: Notes

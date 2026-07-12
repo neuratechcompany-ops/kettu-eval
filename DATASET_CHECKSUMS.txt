@@ -1,0 +1,8 @@
+# Dataset Checksums — Kettu Eval v0.1.0
+
+Computed over all non-report data files (YAML, JSONL, JSON).
+Deterministic: sorted file list, SHA-256.
+
+memory-core-v1.0.0   sha256:372afc293b651206202dc7dbedf1eac94bbf12e14d30a03c54e7767522f267a7
+context-core-v1.0.0  sha256:cce1fadc99d9d647c6a0d85b56ece4b18edd8326da8e20e19bbd46be0af6a9a7
+retrieval-core-v1.0.0 sha256:21815cc60518eb547bee48ca4cd67c33816ca5381f3843455e3c1f75daab5479

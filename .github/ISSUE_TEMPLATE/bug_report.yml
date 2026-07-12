@@ -1,0 +1,32 @@
+name: Bug Report
+description: Report a bug in Kettu Eval
+labels: [bug]
+body:
+  - type: input
+    attributes:
+      label: Kettu Eval version
+      placeholder: "0.1.0"
+  - type: input
+    attributes:
+      label: Commit hash
+  - type: input
+    attributes:
+      label: OS / Python version
+  - type: dropdown
+    attributes:
+      label: Profile
+      options: [memory-core, context-core, retrieval-core, conformance, CLI, other]
+  - type: textarea
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected result
+  - type: textarea
+    attributes:
+      label: Actual result
+  - type: textarea
+    attributes:
+      label: Logs (no secrets)

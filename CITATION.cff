@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: Kettu Eval
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - name: Neu|ra|tech / Neuratech
+repository-code: "https://github.com/neuratechcompany-ops/kettu-eval"
+license: Apache-2.0
+version: 0.1.0
+date-released: "2026-07-12"
