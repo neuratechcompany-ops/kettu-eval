@@ -176,7 +176,11 @@ def compute_res(metrics: list[MetricResult], gates: list[HardGate]) -> Composite
         "latency_ms": 5,
     }
     # Normalize: all positive components contribute 0-1, negative reduce
-    total = sum(components.get(k, 0) * v for k, v in weights.items() if v > 0)
+    total = sum(components.get(k, 0) * v for k, v in weights.items() if v > 0 and k != "latency_ms")
+    # Latency: normalize to [0,5] where 0ms→5, 1000ms→0
+    latency = components.get("latency_ms", 0)
+    latency_score = max(0, 5 * (1 - min(latency, 1000) / 1000))
+    total += latency_score
     total -= sum(components.get(k, 0) * abs(v) for k, v in weights.items() if v < 0)
     total = max(0, min(100, total))
 

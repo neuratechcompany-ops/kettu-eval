@@ -43,6 +43,7 @@ class MemoryDatasetRunner:
         try:
             await adapter.reset()
             current_session = None
+            last_search_results = None
 
             for op in scenario["operations"]:
                 op_type = op["op"]
@@ -66,19 +67,18 @@ class MemoryDatasetRunner:
                 elif op_type == "get_context":
                     ctx = await adapter.get_context(op.get("session", current_session))
                 elif op_type == "search":
-                    results = await adapter.search(
+                    last_search_results = await adapter.search(
                         op.get("session", current_session), op["query"],
                         op.get("top_k", 10)
                     )
                 elif op_type == "restart":
-                    # Simulate restart by calling reset (adapter keeps persistent storage)
                     pass
 
             # Evaluate expected_state
             expected = scenario.get("expected_state", {})
             ctx = await adapter.get_context(expected.get("session", current_session))
 
-            metrics = self._evaluate_state(ctx, expected, scenario.get("search_results", None))
+            metrics = self._evaluate_state(ctx, expected, last_search_results)
             gates = self._check_hard_gates(scenario, ctx, expected)
 
             run.metrics = metrics

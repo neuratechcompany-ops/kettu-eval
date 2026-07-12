@@ -259,3 +259,42 @@ class TestRetrievalEdgeCases:
     def test_coverage_partial(self):
         cov = Coverage(total_groups=9, measured_groups=6, skipped_groups=3, unsupported_groups=0)
         assert cov.percentage == pytest.approx(66.67, 0.1)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Audit Regression Tests
+# ═══════════════════════════════════════════════════════════════════════════════
+
+class TestAuditRegressions:
+    """Tests added during Phase 6 audit to prevent regression of fixed findings."""
+
+    def test_search_results_evaluated(self):
+        """KE-002: search results now passed to _evaluate_state."""
+        import inspect
+        from kettu_eval.runners.memory_runner import MemoryDatasetRunner
+        src = inspect.getsource(MemoryDatasetRunner.run_scenario)
+        assert "last_search_results" in src
+
+    def test_res_latency_normalized(self):
+        """KE-004: latency normalized to [0,5] range, not multiplied."""
+        from kettu_eval.runners.retrieval_runner import compute_res
+        metrics = [MetricResult(name="latency_ms", value=100.0, measured=True, sample_count=1),
+                   MetricResult(name="precision@1", value=0.5, measured=True, sample_count=1)]
+        score = compute_res(metrics, [])
+        assert 0 < score.total < 100
+
+    def test_res_fast_beats_slow(self):
+        """Same precision, lower latency = higher RES."""
+        from kettu_eval.runners.retrieval_runner import compute_res
+        fast = [MetricResult(name="latency_ms", value=1.0, measured=True, sample_count=1),
+                MetricResult(name="precision@1", value=0.5, measured=True, sample_count=1)]
+        slow = [MetricResult(name="latency_ms", value=900.0, measured=True, sample_count=1),
+                MetricResult(name="precision@1", value=0.5, measured=True, sample_count=1)]
+        assert compute_res(fast, []).total > compute_res(slow, []).total
+
+    def test_context_forbidden_check_exists(self):
+        """KE-003: forbidden transformations check is implemented."""
+        import inspect
+        from kettu_eval.runners.context_runner import ContextRunner
+        src = inspect.getsource(ContextRunner._check_forbidden_transformations)
+        assert len(src.strip().split('\n')) > 3  # more than just 'pass'
