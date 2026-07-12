@@ -1,0 +1,18 @@
+scenario_id: testout_long_test
+title: 'Test output: long_test.txt'
+category: test_outputs
+difficulty: easy
+input_fixture: fixtures/tests/long_test.txt
+source_type: tool
+source_path: pytest
+recommended_policy: lossless
+required_preservations:
+- exit_code
+allowed_transformations:
+- pass_aggregation
+forbidden_transformations: []
+expected_state:
+  has_failures: false
+  exit_code_preserved: true
+metrics: []
+hard_gates: []

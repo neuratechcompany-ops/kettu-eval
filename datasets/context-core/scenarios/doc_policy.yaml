@@ -1,0 +1,30 @@
+scenario_id: doc_policy
+title: 'Document: policy'
+category: documents
+difficulty: easy
+input_content: '# Security Policy
+
+
+  All connections use TLS 1.3.
+
+  Rate limit: 100 req/s.
+
+  Max payload: 10MB.
+
+  '
+source_type: file
+source_path: /docs/policy.md
+recommended_policy: recoverable_lossy
+required_preservations:
+- version_numbers
+- decisions
+- security_mentions
+allowed_transformations:
+- section_summary_with_refs
+forbidden_transformations:
+- decision_removal_without_ref
+expected_state:
+  key_content_preserved: true
+metrics:
+- critical_field_recall
+hard_gates: []

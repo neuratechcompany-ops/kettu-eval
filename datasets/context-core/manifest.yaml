@@ -1,0 +1,67 @@
+dataset_id: context-core
+version: 1.0.0
+description: "Core context optimization evaluation — fidelity, recoverability, safety"
+license: MIT
+language: multilingual
+scenario_count: 42
+created_at: "2026-07-12"
+
+categories:
+  source_code:
+    count: 8
+    description: "Python, Rust, JS — imports, functions, security checks"
+  logs:
+    count: 7
+    description: "RLE, errors, stack traces, interleaved, timestamps"
+  json:
+    count: 6
+    description: "Null preservation, empty values, large arrays, Unicode"
+  test_outputs:
+    count: 5
+    description: "pytest, cargo test — failures, exit codes, tracebacks"
+  git_diff:
+    count: 4
+    description: "Changed lines, renames, deletions, multi-hunk"
+  configs:
+    count: 4
+    description: "YAML, TOML, .env — strict_raw by default"
+  documents:
+    count: 3
+    description: "Long text with recoverable lossy"
+  unicode:
+    count: 4
+    description: "Cyrillic, CJK, emoji, combining, RTL"
+  adversarial:
+    count: 3
+    description: "Fake refs, prompt injection, binary-like payload"
+
+evaluation:
+  mode: deterministic
+  llm_required: false
+  metrics:
+    - critical_field_recall
+    - identifier_recall
+    - numeric_exact_match
+    - path_preservation
+    - url_preservation
+    - error_preservation
+    - reference_validity
+    - reference_resolution_rate
+    - byte_exact_recovery_rate
+    - broken_reference_count
+    - cross_session_violations
+    - source_code_critical_omissions
+    - diff_changed_line_preservation
+    - original_token_count
+    - optimized_token_count
+    - token_reduction_pct
+    - fallback_rate
+    - compression_latency_ms
+  hard_gates:
+    - broken_references
+    - cross_session_ref_leakage
+    - byte_exact_recovery
+    - critical_field_recall
+    - source_code_omission
+    - unicode_crash
+    - diff_line_preservation

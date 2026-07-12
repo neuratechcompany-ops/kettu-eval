@@ -1,0 +1,25 @@
+scenario_id: source_rust_lib
+title: 'Source code: rust/lib.rs'
+category: source_code
+difficulty: easy
+input_fixture: fixtures/source_code/rust/lib.rs
+source_type: file
+source_path: /Users/aurum/kettu-eval/datasets/context-core/fixtures/source_code/rust/lib.rs
+recommended_policy: strict_raw
+required_preservations:
+- fn
+- struct
+- impl
+- pub
+forbidden_transformations:
+- function_removal
+- import_removal
+- guard_removal
+expected_state:
+  content_preserved: true
+  critical_lines_count: 63
+metrics:
+- identifier_recall
+- source_code_critical_omissions
+hard_gates:
+- source_code_omission

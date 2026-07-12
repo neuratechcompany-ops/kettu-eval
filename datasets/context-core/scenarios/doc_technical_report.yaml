@@ -1,0 +1,40 @@
+scenario_id: doc_technical_report
+title: 'Document: technical_report'
+category: documents
+difficulty: easy
+input_content: '## Architecture
+
+
+  The system uses PostgreSQL 16.
+
+  Redis for caching.
+
+  Nginx as reverse proxy.
+
+
+  ## Decisions
+
+
+  1. SQL over NoSQL
+
+  2. Monorepo
+
+  3. MIT license
+
+  '
+source_type: file
+source_path: /docs/technical_report.md
+recommended_policy: recoverable_lossy
+required_preservations:
+- version_numbers
+- decisions
+- security_mentions
+allowed_transformations:
+- section_summary_with_refs
+forbidden_transformations:
+- decision_removal_without_ref
+expected_state:
+  key_content_preserved: true
+metrics:
+- critical_field_recall
+hard_gates: []

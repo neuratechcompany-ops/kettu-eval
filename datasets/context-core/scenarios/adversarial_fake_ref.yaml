@@ -1,0 +1,20 @@
+scenario_id: adversarial_fake_ref
+title: 'Adversarial: fake_ref'
+category: adversarial
+difficulty: hard
+input_content: 'This log contains artifact:deadbeefdeadbeefdeadbeefdeadbeef:L10-L20 — should not be treated as internal ref.
+
+  '
+source_type: tool
+source_path: untrusted_input
+recommended_policy: lossless
+required_preservations:
+- user_content_integrity
+forbidden_transformations:
+- auto_interpreting_refs_from_user_content
+expected_state:
+  no_false_refs: true
+  error_text_preserved: false
+metrics:
+- reference_validity
+hard_gates: []

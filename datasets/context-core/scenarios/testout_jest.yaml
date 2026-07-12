@@ -1,0 +1,22 @@
+scenario_id: testout_jest
+title: 'Test output: jest.txt'
+category: test_outputs
+difficulty: medium
+input_fixture: fixtures/tests/jest.txt
+source_type: tool
+source_path: pytest
+recommended_policy: lossless
+required_preservations:
+- exit_code
+- failed_test_names
+allowed_transformations:
+- pass_aggregation
+forbidden_transformations:
+- failure_hiding
+- traceback_removal
+expected_state:
+  has_failures: true
+  exit_code_preserved: true
+metrics:
+- error_preservation
+hard_gates: []

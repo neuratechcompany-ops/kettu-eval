@@ -1,0 +1,37 @@
+scenario_id: doc_release_notes
+title: 'Document: release_notes'
+category: documents
+difficulty: easy
+input_content: '## Release v2.0
+
+
+  Breaking changes:
+
+  - API endpoint changed
+
+  - Config format updated
+
+
+  New features:
+
+  - Performance improved
+
+  - Security fix: CVE-2026-0001
+
+  '
+source_type: file
+source_path: /docs/release_notes.md
+recommended_policy: recoverable_lossy
+required_preservations:
+- version_numbers
+- decisions
+- security_mentions
+allowed_transformations:
+- section_summary_with_refs
+forbidden_transformations:
+- decision_removal_without_ref
+expected_state:
+  key_content_preserved: true
+metrics:
+- critical_field_recall
+hard_gates: []

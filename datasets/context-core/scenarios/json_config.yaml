@@ -1,0 +1,19 @@
+scenario_id: json_config
+title: 'JSON optimization: config.json'
+category: json
+difficulty: medium
+input_fixture: fixtures/json/config.json
+source_type: api
+source_path: /Users/aurum/kettu-eval/datasets/context-core/fixtures/json/config.json
+recommended_policy: lossless
+required_preservations:
+- numeric_exact
+allowed_transformations:
+- compact_encoding
+forbidden_transformations: []
+expected_state:
+  valid_json: true
+  nulls_preserved: false
+metrics:
+- numeric_exact_match
+hard_gates: []

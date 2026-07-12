@@ -1,0 +1,24 @@
+scenario_id: source_python_auth_security
+title: 'Security audit: auth.py must preserve all validation logic'
+category: source_code
+difficulty: medium
+input_fixture: fixtures/source_code/python/auth.py
+source_type: file
+source_path: /Users/aurum/kettu-eval/datasets/context-core/fixtures/source_code/python/auth.py
+recommended_policy: strict_raw
+required_preservations:
+- hash_password
+- verify_password
+- authenticate
+- hashlib.sha256
+forbidden_transformations:
+- function_removal
+- guard_removal
+- security_check_removal
+expected_state:
+  content_preserved: true
+metrics:
+- identifier_recall
+- source_code_critical_omissions
+hard_gates:
+- source_code_omission

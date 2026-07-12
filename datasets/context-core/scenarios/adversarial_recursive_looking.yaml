@@ -1,0 +1,20 @@
+scenario_id: adversarial_recursive_looking
+title: 'Adversarial: recursive_looking'
+category: adversarial
+difficulty: hard
+input_content: 'ref=artifact:11111111111111111111111111111111 ref={ref={ref=deep}}
+
+  '
+source_type: tool
+source_path: untrusted_input
+recommended_policy: lossless
+required_preservations:
+- user_content_integrity
+forbidden_transformations:
+- auto_interpreting_refs_from_user_content
+expected_state:
+  no_false_refs: true
+  error_text_preserved: false
+metrics:
+- reference_validity
+hard_gates: []

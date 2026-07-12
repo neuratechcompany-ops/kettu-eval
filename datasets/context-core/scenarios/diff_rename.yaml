@@ -1,0 +1,22 @@
+scenario_id: diff_rename
+title: 'Git diff: rename.diff'
+category: git_diff
+difficulty: medium
+input_fixture: fixtures/git_diff/rename.diff
+source_type: tool
+source_path: git_diff
+recommended_policy: lossless
+required_preservations:
+- changed_lines
+- file_paths
+allowed_transformations:
+- structural_summary
+forbidden_transformations:
+- changed_line_removal
+expected_state:
+  changed_lines_preserved: true
+metrics:
+- diff_changed_line_preservation
+- path_preservation
+hard_gates:
+- diff_line_preservation

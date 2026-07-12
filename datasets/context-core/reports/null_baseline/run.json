@@ -1,0 +1,3893 @@
+{
+  "adapter": "NullContextAdapter",
+  "total": 43,
+  "passed": 9,
+  "failed": 34,
+  "pass_rate": 0.20930232558139536,
+  "runs": [
+    {
+      "run_id": "10f124086fdf46f495c1ca836c91a6aa",
+      "suite_id": "context-core",
+      "scenario_id": "adversarial_fake_ref",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.216627+00:00",
+      "finished_at": "2026-07-12T10:56:33.261118+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 30.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 30.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "494ad36bf2a9430886e5e6a952fb2871",
+      "suite_id": "context-core",
+      "scenario_id": "adversarial_prompt_injection",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.261139+00:00",
+      "finished_at": "2026-07-12T10:56:33.261167+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 16.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 16.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "329fd287feb74ad6a8aa4b34fd65eca1",
+      "suite_id": "context-core",
+      "scenario_id": "adversarial_recursive_looking",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.261173+00:00",
+      "finished_at": "2026-07-12T10:56:33.261197+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 23.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 23.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "33944ddbf2624be9b8645bd424ce08c5",
+      "suite_id": "context-core",
+      "scenario_id": "config_.env",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.261203+00:00",
+      "finished_at": "2026-07-12T10:56:33.261334+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 54.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 54.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "03e015a623e94d68bbb0b2032c7305cf",
+      "suite_id": "context-core",
+      "scenario_id": "config_Cargo",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.261348+00:00",
+      "finished_at": "2026-07-12T10:56:33.261459+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 70.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 70.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "ac139abd69704f2592c7fe544df9c993",
+      "suite_id": "context-core",
+      "scenario_id": "config_app",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.261466+00:00",
+      "finished_at": "2026-07-12T10:56:33.261541+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 57.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 57.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "eb6e86a4107e4cc28cb388c0bef59a2e",
+      "suite_id": "context-core",
+      "scenario_id": "config_docker-compose",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.261545+00:00",
+      "finished_at": "2026-07-12T10:56:33.261652+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 73.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 73.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "00d692fae1f642b3ae521d534d2ec030",
+      "suite_id": "context-core",
+      "scenario_id": "diff_delete",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.261662+00:00",
+      "finished_at": "2026-07-12T10:56:33.261764+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 101.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 101.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "ba68ad044b264102975d73e54ccb211b",
+      "suite_id": "context-core",
+      "scenario_id": "diff_large",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.261769+00:00",
+      "finished_at": "2026-07-12T10:56:33.261949+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 358.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 358.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "4d7996b58f57438dbe70880030ae869d",
+      "suite_id": "context-core",
+      "scenario_id": "diff_multi_file",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.261953+00:00",
+      "finished_at": "2026-07-12T10:56:33.262075+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 212.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 212.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "c7387a41506a4f25a44a63bfd25fe7a3",
+      "suite_id": "context-core",
+      "scenario_id": "diff_rename",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.262079+00:00",
+      "finished_at": "2026-07-12T10:56:33.262146+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 88.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 88.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "c65d61c169c14056b8b40c8f9cfcca48",
+      "suite_id": "context-core",
+      "scenario_id": "doc_policy",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.262150+00:00",
+      "finished_at": "2026-07-12T10:56:33.262172+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 28.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 28.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 3,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/3 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "e6fb1ee7fcc7481ba0ec2600acf8b32e",
+      "suite_id": "context-core",
+      "scenario_id": "doc_release_notes",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.262175+00:00",
+      "finished_at": "2026-07-12T10:56:33.262200+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 39.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 39.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 3,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/3 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "843e592c7e2d44198286796bc74f7138",
+      "suite_id": "context-core",
+      "scenario_id": "doc_technical_report",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.262203+00:00",
+      "finished_at": "2026-07-12T10:56:33.262231+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 43.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 43.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.3333,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 3,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "1/3 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "d514366dfa9a401188309604bb3575bc",
+      "suite_id": "context-core",
+      "scenario_id": "json_config",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.262234+00:00",
+      "finished_at": "2026-07-12T10:56:33.262311+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 89.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 89.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "0d654e177d6a4ebf80f6a05c8743320b",
+      "suite_id": "context-core",
+      "scenario_id": "json_errors",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.262314+00:00",
+      "finished_at": "2026-07-12T10:56:33.262372+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 66.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 66.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "ad4998605d704190a2e6c19a736dee96",
+      "suite_id": "context-core",
+      "scenario_id": "json_large_array",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.262375+00:00",
+      "finished_at": "2026-07-12T10:56:33.263120+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 1904.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 1904.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "40f92b6d1ecc49f8ab38278edc6b8852",
+      "suite_id": "context-core",
+      "scenario_id": "json_metrics",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.263124+00:00",
+      "finished_at": "2026-07-12T10:56:33.263177+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 52.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 52.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "253ba52206294401aa4e5454babe81fd",
+      "suite_id": "context-core",
+      "scenario_id": "json_nested",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.263180+00:00",
+      "finished_at": "2026-07-12T10:56:33.263219+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 26.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 26.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "1da1440480a741bc8a889d152a85d09e",
+      "suite_id": "context-core",
+      "scenario_id": "json_with_nulls",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.263222+00:00",
+      "finished_at": "2026-07-12T10:56:33.263268+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 44.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 44.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "f5690e3d3c3e409cb3433edddcd09813",
+      "suite_id": "context-core",
+      "scenario_id": "logs_app",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.263271+00:00",
+      "finished_at": "2026-07-12T10:56:33.263381+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 203.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 203.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "1/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "623f5e7550284b13b264ebe9c0fee1f4",
+      "suite_id": "context-core",
+      "scenario_id": "logs_docker",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.263385+00:00",
+      "finished_at": "2026-07-12T10:56:33.263447+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 81.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 81.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 0,
+          "threshold": 1.0,
+          "passed": false,
+          "detail": "0/0 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "ae0df6ee7d4f48b7b766bc3df2100d24",
+      "suite_id": "context-core",
+      "scenario_id": "logs_error",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.263453+00:00",
+      "finished_at": "2026-07-12T10:56:33.263578+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 251.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 251.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "1/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "9934ee3e0af2448d80e5f6cf45b856ed",
+      "suite_id": "context-core",
+      "scenario_id": "logs_k8s_events",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.263581+00:00",
+      "finished_at": "2026-07-12T10:56:33.263726+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 266.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 266.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 0,
+          "threshold": 1.0,
+          "passed": false,
+          "detail": "0/0 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "4b0aea78772f4aa696dcd0121409a8de",
+      "suite_id": "context-core",
+      "scenario_id": "logs_mixed",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.263732+00:00",
+      "finished_at": "2026-07-12T10:56:33.263803+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 103.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 103.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "2/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "35578510c71344ed8aeff08488a319e1",
+      "suite_id": "context-core",
+      "scenario_id": "logs_rust_build",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.263809+00:00",
+      "finished_at": "2026-07-12T10:56:33.263899+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 131.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 131.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "1/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "ec4c664d9a124342983c66910f1e696a",
+      "suite_id": "context-core",
+      "scenario_id": "logs_system",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.263903+00:00",
+      "finished_at": "2026-07-12T10:56:33.264093+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 439.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 439.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 0,
+          "threshold": 1.0,
+          "passed": false,
+          "detail": "0/0 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "75ae531fcb3c450888ab439084c55d03",
+      "suite_id": "context-core",
+      "scenario_id": "source_python_auth",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.264097+00:00",
+      "finished_at": "2026-07-12T10:56:33.264281+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 337.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 337.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "4/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "139e5f5051f74855bcaafe39ad535d67",
+      "suite_id": "context-core",
+      "scenario_id": "source_python_auth_security",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.264284+00:00",
+      "finished_at": "2026-07-12T10:56:33.264443+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 337.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 337.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "4/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "1854b6b354c34322a1b094ec961ce427",
+      "suite_id": "context-core",
+      "scenario_id": "source_python_parser",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.264447+00:00",
+      "finished_at": "2026-07-12T10:56:33.264813+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 738.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 738.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.75,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "3/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [
+        {
+          "name": "source_code_omission",
+          "passed": false,
+          "actual": 0.75,
+          "condition": "recall>=0.995"
+        }
+      ],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "0faf4b9f60364ae09f538348b1e39342",
+      "suite_id": "context-core",
+      "scenario_id": "source_python_worker",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.264817+00:00",
+      "finished_at": "2026-07-12T10:56:33.265021+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 361.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 361.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.75,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "3/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [
+        {
+          "name": "source_code_omission",
+          "passed": false,
+          "actual": 0.75,
+          "condition": "recall>=0.995"
+        }
+      ],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "898cb13305bf4fc0a227203270de1083",
+      "suite_id": "context-core",
+      "scenario_id": "source_rust_engine",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.265025+00:00",
+      "finished_at": "2026-07-12T10:56:33.265195+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 282.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 282.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "4/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "c454a43c66c94d37b4d598818d0531b5",
+      "suite_id": "context-core",
+      "scenario_id": "source_rust_lib",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.265199+00:00",
+      "finished_at": "2026-07-12T10:56:33.265393+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 374.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 374.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "4/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "8f8aae52413a4a7bb1629f842d91ebfd",
+      "suite_id": "context-core",
+      "scenario_id": "source_rust_middleware",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.265397+00:00",
+      "finished_at": "2026-07-12T10:56:33.265628+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 443.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 443.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "4/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "4ae3c08561654721ad52597f3490bcd3",
+      "suite_id": "context-core",
+      "scenario_id": "testout_cargo_test",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.265632+00:00",
+      "finished_at": "2026-07-12T10:56:33.265719+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 129.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 129.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "6d2acdbb8492448080ef9f462985ce27",
+      "suite_id": "context-core",
+      "scenario_id": "testout_go_test",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.265722+00:00",
+      "finished_at": "2026-07-12T10:56:33.265783+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 73.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 73.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "b7da402612474226b54aa0213f4828ce",
+      "suite_id": "context-core",
+      "scenario_id": "testout_jest",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.265786+00:00",
+      "finished_at": "2026-07-12T10:56:33.265865+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 98.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 98.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "af833cf394e6492792870bc38d5a7c69",
+      "suite_id": "context-core",
+      "scenario_id": "testout_long_test",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.265868+00:00",
+      "finished_at": "2026-07-12T10:56:33.266029+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 353.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 353.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "5bba7d3133b0495d9c0fe2108efbd86a",
+      "suite_id": "context-core",
+      "scenario_id": "testout_pytest_mixed",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.266033+00:00",
+      "finished_at": "2026-07-12T10:56:33.266126+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 69.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 69.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "9c09e9e04f524ccd8131ddc29fac7972",
+      "suite_id": "context-core",
+      "scenario_id": "unicode_arabic",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.266138+00:00",
+      "finished_at": "2026-07-12T10:56:33.266279+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 56.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 56.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "06b64efc7b5c47f081a874c68375ece0",
+      "suite_id": "context-core",
+      "scenario_id": "unicode_control_chars",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.266291+00:00",
+      "finished_at": "2026-07-12T10:56:33.266345+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 16.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 16.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "ec8565c615e5486087ca46036fb17c2f",
+      "suite_id": "context-core",
+      "scenario_id": "unicode_long_chinese",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.266350+00:00",
+      "finished_at": "2026-07-12T10:56:33.266825+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 3001.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 3001.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "917281ed05c24409a3a441454c46a892",
+      "suite_id": "context-core",
+      "scenario_id": "unicode_mixed_scripts",
+      "adapter": "NullContextAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.266833+00:00",
+      "finished_at": "2026-07-12T10:56:33.266902+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 50.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 50.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.0,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    }
+  ]
+}

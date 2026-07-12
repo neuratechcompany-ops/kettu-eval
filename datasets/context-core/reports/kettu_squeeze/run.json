@@ -1,0 +1,3913 @@
+{
+  "adapter": "KettuSqueezeAdapter",
+  "total": 43,
+  "passed": 9,
+  "failed": 34,
+  "pass_rate": 0.20930232558139536,
+  "runs": [
+    {
+      "run_id": "92bfb277c8034d2598fd57e2671aef6c",
+      "suite_id": "context-core",
+      "scenario_id": "adversarial_fake_ref",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.283661+00:00",
+      "finished_at": "2026-07-12T10:56:33.285448+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 30.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 30.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 1.45,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": 1.0,
+          "unit": "count",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "reference_resolution_rate",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 1.0,
+          "passed": false,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 1.0,
+          "passed": true,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "c19a4a15ea984338a6f6af83b0bb4039",
+      "suite_id": "context-core",
+      "scenario_id": "adversarial_prompt_injection",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.285456+00:00",
+      "finished_at": "2026-07-12T10:56:33.286130+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 16.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 16.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.65,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "0aa602dd985d4a7293bdc0dc54bfa478",
+      "suite_id": "context-core",
+      "scenario_id": "adversarial_recursive_looking",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.286136+00:00",
+      "finished_at": "2026-07-12T10:56:33.286959+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 23.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 23.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.56,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": 1.0,
+          "unit": "count",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "reference_resolution_rate",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 1.0,
+          "passed": false,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 1.0,
+          "passed": true,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "17d0cd1f59c24727aeaf9ec3ee22af51",
+      "suite_id": "context-core",
+      "scenario_id": "config_.env",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.286966+00:00",
+      "finished_at": "2026-07-12T10:56:33.287763+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 54.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 54.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.74,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "067b6654adff46ddb5b2075e905c7041",
+      "suite_id": "context-core",
+      "scenario_id": "config_Cargo",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.287768+00:00",
+      "finished_at": "2026-07-12T10:56:33.288640+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 70.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 70.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.81,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "2a13ddf468f14816b6a718ba6ebed46e",
+      "suite_id": "context-core",
+      "scenario_id": "config_app",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.288646+00:00",
+      "finished_at": "2026-07-12T10:56:33.289220+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 57.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 57.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.51,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "cf8ef0c7524a4c5cb3f05bf5481f0874",
+      "suite_id": "context-core",
+      "scenario_id": "config_docker-compose",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.289225+00:00",
+      "finished_at": "2026-07-12T10:56:33.290841+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 73.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 73.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 1.55,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "e11623a764ba4b76abde9095df579d44",
+      "suite_id": "context-core",
+      "scenario_id": "diff_delete",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.290846+00:00",
+      "finished_at": "2026-07-12T10:56:33.291712+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 101.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 101.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.78,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "790ae6b7b814445f9ab513d9c679baf7",
+      "suite_id": "context-core",
+      "scenario_id": "diff_large",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.291719+00:00",
+      "finished_at": "2026-07-12T10:56:33.292835+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 358.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 358.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.92,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "97bb45b896094c7ab47227e24625691f",
+      "suite_id": "context-core",
+      "scenario_id": "diff_multi_file",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.292841+00:00",
+      "finished_at": "2026-07-12T10:56:33.293659+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 212.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 212.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.68,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "d1f9c509b60843098adae1dac860fe7f",
+      "suite_id": "context-core",
+      "scenario_id": "diff_rename",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.293665+00:00",
+      "finished_at": "2026-07-12T10:56:33.294267+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 88.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 88.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.53,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "4751b11025c342dcb2f575d1109ce32d",
+      "suite_id": "context-core",
+      "scenario_id": "doc_policy",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.294271+00:00",
+      "finished_at": "2026-07-12T10:56:33.294792+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 28.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 28.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.49,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 3,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/3 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "832c89b7859247da84efec266b1ac65e",
+      "suite_id": "context-core",
+      "scenario_id": "doc_release_notes",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.294796+00:00",
+      "finished_at": "2026-07-12T10:56:33.295276+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 39.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 39.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.45,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 3,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/3 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "19d2d300048043ac98feb92061d30b2f",
+      "suite_id": "context-core",
+      "scenario_id": "doc_technical_report",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.295280+00:00",
+      "finished_at": "2026-07-12T10:56:33.295804+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 43.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 43.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.49,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.3333,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 3,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "1/3 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "892a8e9305e14f15863e40cd851f9366",
+      "suite_id": "context-core",
+      "scenario_id": "json_config",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.295811+00:00",
+      "finished_at": "2026-07-12T10:56:33.296988+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 89.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 50.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 1.1,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 43.8,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "6f7764f912b4405895fe06630e173398",
+      "suite_id": "context-core",
+      "scenario_id": "json_errors",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.296993+00:00",
+      "finished_at": "2026-07-12T10:56:33.297659+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 66.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 48.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.61,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 27.3,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "2964d209357d48bc976323aa2a547ad5",
+      "suite_id": "context-core",
+      "scenario_id": "json_large_array",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.297664+00:00",
+      "finished_at": "2026-07-12T10:56:33.299555+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 1904.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 1004.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 1.27,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 47.3,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "06a31c47c4a74f9bb6b958ca3948ad8c",
+      "suite_id": "context-core",
+      "scenario_id": "json_metrics",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.299565+00:00",
+      "finished_at": "2026-07-12T10:56:33.300360+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 52.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 40.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.72,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 23.1,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "efbe32f3332745c7aedfaf4e37c2ed27",
+      "suite_id": "context-core",
+      "scenario_id": "json_nested",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.300366+00:00",
+      "finished_at": "2026-07-12T10:56:33.301034+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 26.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 19.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.62,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 26.9,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "4d015ddfefe64153bebc9b5ec786cbb6",
+      "suite_id": "context-core",
+      "scenario_id": "json_with_nulls",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.301039+00:00",
+      "finished_at": "2026-07-12T10:56:33.301627+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 44.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 22.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.54,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 50.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "9d0428727e9c4115bdbf17a827cf402c",
+      "suite_id": "context-core",
+      "scenario_id": "logs_app",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.301631+00:00",
+      "finished_at": "2026-07-12T10:56:33.302827+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 203.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 203.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 1.08,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "1/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "06ad461bc1b64d8abbe14dadd38c7974",
+      "suite_id": "context-core",
+      "scenario_id": "logs_docker",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.302833+00:00",
+      "finished_at": "2026-07-12T10:56:33.303396+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 81.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 100.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.48,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": -23.5,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 0,
+          "threshold": 1.0,
+          "passed": false,
+          "detail": "0/0 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "7f5747266c274369bc8c977adb022819",
+      "suite_id": "context-core",
+      "scenario_id": "logs_error",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.303402+00:00",
+      "finished_at": "2026-07-12T10:56:33.304471+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 251.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 251.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.93,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "1/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "aa4587f3a2224830a44786fa33f09834",
+      "suite_id": "context-core",
+      "scenario_id": "logs_k8s_events",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.304478+00:00",
+      "finished_at": "2026-07-12T10:56:33.305256+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 266.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 283.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.62,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": -6.4,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 0,
+          "threshold": 1.0,
+          "passed": false,
+          "detail": "0/0 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "eb3bcea7f86d4cd589e2b41f9a3aede3",
+      "suite_id": "context-core",
+      "scenario_id": "logs_mixed",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.305262+00:00",
+      "finished_at": "2026-07-12T10:56:33.305863+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 103.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 93.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.52,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 9.7,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "2/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "38e264757f7a4c32bb07c035d4e88d2b",
+      "suite_id": "context-core",
+      "scenario_id": "logs_rust_build",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.305870+00:00",
+      "finished_at": "2026-07-12T10:56:33.306480+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 131.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 162.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.51,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": -23.7,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "1/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "9000044e45704184ab803c0a9ff51c28",
+      "suite_id": "context-core",
+      "scenario_id": "logs_system",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.306486+00:00",
+      "finished_at": "2026-07-12T10:56:33.307341+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 439.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 480.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.65,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": -9.3,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 0,
+          "threshold": 1.0,
+          "passed": false,
+          "detail": "0/0 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "56127262677349d2993a511830401c76",
+      "suite_id": "context-core",
+      "scenario_id": "source_python_auth",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.307346+00:00",
+      "finished_at": "2026-07-12T10:56:33.308576+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 337.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 337.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 1.04,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "4/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "446a91c9fc26447b9a901c64494ba9ea",
+      "suite_id": "context-core",
+      "scenario_id": "source_python_auth_security",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.308585+00:00",
+      "finished_at": "2026-07-12T10:56:33.309835+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 337.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 337.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 1.05,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "4/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "b3ab76f13d924a2498affeea760c724f",
+      "suite_id": "context-core",
+      "scenario_id": "source_python_parser",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.309842+00:00",
+      "finished_at": "2026-07-12T10:56:33.311239+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 738.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 738.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 1.02,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.75,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "3/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [
+        {
+          "name": "source_code_omission",
+          "passed": false,
+          "actual": 0.75,
+          "condition": "recall>=0.995"
+        }
+      ],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "4385ae2432824499b7d21768b210e7d1",
+      "suite_id": "context-core",
+      "scenario_id": "source_python_worker",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.311245+00:00",
+      "finished_at": "2026-07-12T10:56:33.312078+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 361.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 361.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.63,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.75,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "3/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [
+        {
+          "name": "source_code_omission",
+          "passed": false,
+          "actual": 0.75,
+          "condition": "recall>=0.995"
+        }
+      ],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "ca3fae0d629648f7b7f23b8842e3d29f",
+      "suite_id": "context-core",
+      "scenario_id": "source_rust_engine",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.312083+00:00",
+      "finished_at": "2026-07-12T10:56:33.312841+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 282.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 282.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.59,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "4/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "55a3222441c64e0ab7d71cd70a25a856",
+      "suite_id": "context-core",
+      "scenario_id": "source_rust_lib",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.312845+00:00",
+      "finished_at": "2026-07-12T10:56:33.313850+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 374.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 374.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.82,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "4/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "52ba9ba0a98c43c586427a952add6777",
+      "suite_id": "context-core",
+      "scenario_id": "source_rust_middleware",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.313855+00:00",
+      "finished_at": "2026-07-12T10:56:33.314769+00:00",
+      "status": "pass",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 443.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 443.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.69,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 1.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 4,
+          "threshold": 0.8,
+          "passed": true,
+          "detail": "4/4 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "8fb1832d584c4d1cb2fe214b8e096f57",
+      "suite_id": "context-core",
+      "scenario_id": "testout_cargo_test",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.314774+00:00",
+      "finished_at": "2026-07-12T10:56:33.315375+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 129.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 129.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.51,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "f15644bcbb234a2893ec5b97150b9d34",
+      "suite_id": "context-core",
+      "scenario_id": "testout_go_test",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.315380+00:00",
+      "finished_at": "2026-07-12T10:56:33.316630+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 73.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 73.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 1.18,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "0be74e07e9b24345ad6bb1f9db80f5e4",
+      "suite_id": "context-core",
+      "scenario_id": "testout_jest",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.316637+00:00",
+      "finished_at": "2026-07-12T10:56:33.317481+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 98.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 98.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.74,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "030f9c1a6601447a80d68f7298f169c5",
+      "suite_id": "context-core",
+      "scenario_id": "testout_long_test",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.317488+00:00",
+      "finished_at": "2026-07-12T10:56:33.318431+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 353.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 353.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.77,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "298925d2b58e46a5820b7e6bef035192",
+      "suite_id": "context-core",
+      "scenario_id": "testout_pytest_mixed",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.318435+00:00",
+      "finished_at": "2026-07-12T10:56:33.319160+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 69.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 69.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.66,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 2,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/2 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "6f84129e04f54c99990d18f46cc32e33",
+      "suite_id": "context-core",
+      "scenario_id": "unicode_arabic",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.319164+00:00",
+      "finished_at": "2026-07-12T10:56:33.320156+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 56.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 56.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.93,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "e6e0ea4c89eb44319242da448fd61692",
+      "suite_id": "context-core",
+      "scenario_id": "unicode_control_chars",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.320163+00:00",
+      "finished_at": "2026-07-12T10:56:33.320873+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 16.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 16.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.65,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "15c535e7a0fd445491e335ed734301d1",
+      "suite_id": "context-core",
+      "scenario_id": "unicode_long_chinese",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.320880+00:00",
+      "finished_at": "2026-07-12T10:56:33.323025+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 3001.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 3001.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 1.69,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    },
+    {
+      "run_id": "e5d8fd6fa6d84329b5837ef48e069a65",
+      "suite_id": "context-core",
+      "scenario_id": "unicode_mixed_scripts",
+      "adapter": "KettuSqueezeAdapter",
+      "adapter_version": "0.1.0",
+      "model": "deterministic",
+      "runtime": "local",
+      "seed": null,
+      "repeat": 1,
+      "started_at": "2026-07-12T10:56:33.323032+00:00",
+      "finished_at": "2026-07-12T10:56:33.323753+00:00",
+      "status": "fail",
+      "metrics": [
+        {
+          "name": "original_token_count",
+          "value": 50.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "optimized_token_count",
+          "value": 50.0,
+          "unit": "tokens",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "compression_latency_ms",
+          "value": 0.65,
+          "unit": "ms",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "token_reduction_pct",
+          "value": 0.0,
+          "unit": "pct",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "critical_field_recall",
+          "value": 0.0,
+          "unit": "ratio",
+          "measured": true,
+          "sample_count": 1,
+          "threshold": 0.8,
+          "passed": false,
+          "detail": "0/1 required items found"
+        },
+        {
+          "name": "reference_validity",
+          "value": null,
+          "unit": "count",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        },
+        {
+          "name": "byte_exact_recovery_rate",
+          "value": null,
+          "unit": "ratio",
+          "measured": false,
+          "sample_count": 0,
+          "threshold": null,
+          "passed": null,
+          "detail": null
+        }
+      ],
+      "hard_gates": [],
+      "artifacts": {},
+      "failure_class": null,
+      "failure_detail": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+scenario_id: config_Cargo
+title: 'Config: Cargo.toml'
+category: configs
+difficulty: easy
+input_fixture: fixtures/configs/Cargo.toml
+source_type: file
+source_path: /Users/aurum/kettu-eval/datasets/context-core/fixtures/configs/Cargo.toml
+recommended_policy: strict_raw
+required_preservations:
+- all_keys
+- all_values
+forbidden_transformations:
+- value_change
+expected_state:
+  content_preserved: true
+metrics: []
+hard_gates: []

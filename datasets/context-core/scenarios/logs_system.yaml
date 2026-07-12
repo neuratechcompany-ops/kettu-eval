@@ -1,0 +1,21 @@
+scenario_id: logs_system
+title: 'Log compression: system.log'
+category: logs
+difficulty: easy
+input_fixture: fixtures/logs/system.log
+source_type: tool
+source_path: /Users/aurum/kettu-eval/datasets/context-core/fixtures/logs/system.log
+recommended_policy: lossless
+required_preservations: []
+allowed_transformations:
+- run_length_encoding
+- ansi_strip
+forbidden_transformations:
+- error_removal
+- timestamp_fabrication
+expected_state:
+  errors_preserved: false
+  line_count: 20
+metrics:
+- error_preservation
+hard_gates: []

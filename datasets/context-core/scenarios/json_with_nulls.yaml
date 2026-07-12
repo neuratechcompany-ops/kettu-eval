@@ -1,0 +1,22 @@
+scenario_id: json_with_nulls
+title: 'JSON optimization: with_nulls.json'
+category: json
+difficulty: easy
+input_fixture: fixtures/json/with_nulls.json
+source_type: api
+source_path: /Users/aurum/kettu-eval/datasets/context-core/fixtures/json/with_nulls.json
+recommended_policy: lossless
+required_preservations:
+- null_semantics
+- numeric_exact
+allowed_transformations:
+- compact_encoding
+forbidden_transformations:
+- null_removal_without_ref
+expected_state:
+  valid_json: true
+  nulls_preserved: true
+metrics:
+- numeric_exact_match
+- critical_field_recall
+hard_gates: []

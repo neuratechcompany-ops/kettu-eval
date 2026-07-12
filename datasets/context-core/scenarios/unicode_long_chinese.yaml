@@ -1,0 +1,18 @@
+scenario_id: unicode_long_chinese
+title: 'Unicode: long_chinese.txt'
+category: unicode
+difficulty: easy
+input_fixture: fixtures/unicode/long_chinese.txt
+source_type: file
+source_path: /Users/aurum/kettu-eval/datasets/context-core/fixtures/unicode/long_chinese.txt
+recommended_policy: lossless
+required_preservations:
+- unicode_integrity
+forbidden_transformations:
+- byte_boundary_violation
+expected_state:
+  no_crash: true
+  content_readable: true
+metrics: []
+hard_gates:
+- unicode_crash

@@ -1,0 +1,22 @@
+scenario_id: logs_error
+title: 'Log compression: error.log'
+category: logs
+difficulty: medium
+input_fixture: fixtures/logs/error.log
+source_type: tool
+source_path: /Users/aurum/kettu-eval/datasets/context-core/fixtures/logs/error.log
+recommended_policy: lossless
+required_preservations:
+- ERROR
+allowed_transformations:
+- run_length_encoding
+- ansi_strip
+forbidden_transformations:
+- error_removal
+- timestamp_fabrication
+expected_state:
+  errors_preserved: true
+  line_count: 9
+metrics:
+- error_preservation
+hard_gates: []

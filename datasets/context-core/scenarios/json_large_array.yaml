@@ -1,0 +1,22 @@
+scenario_id: json_large_array
+title: 'JSON optimization: large_array.json'
+category: json
+difficulty: medium
+input_fixture: fixtures/json/large_array.json
+source_type: api
+source_path: /Users/aurum/kettu-eval/datasets/context-core/fixtures/json/large_array.json
+recommended_policy: lossless
+required_preservations:
+- null_semantics
+- numeric_exact
+allowed_transformations:
+- compact_encoding
+forbidden_transformations:
+- null_removal_without_ref
+expected_state:
+  valid_json: true
+  nulls_preserved: true
+metrics:
+- numeric_exact_match
+- critical_field_recall
+hard_gates: []

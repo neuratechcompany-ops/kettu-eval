@@ -1,0 +1,18 @@
+scenario_id: unicode_mixed_scripts
+title: 'Unicode: mixed_scripts.txt'
+category: unicode
+difficulty: easy
+input_fixture: fixtures/unicode/mixed_scripts.txt
+source_type: file
+source_path: /Users/aurum/kettu-eval/datasets/context-core/fixtures/unicode/mixed_scripts.txt
+recommended_policy: lossless
+required_preservations:
+- unicode_integrity
+forbidden_transformations:
+- byte_boundary_violation
+expected_state:
+  no_crash: true
+  content_readable: true
+metrics: []
+hard_gates:
+- unicode_crash

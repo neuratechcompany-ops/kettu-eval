@@ -1,0 +1,25 @@
+scenario_id: source_python_parser
+title: 'Source code: python/parser.py'
+category: source_code
+difficulty: easy
+input_fixture: fixtures/source_code/python/parser.py
+source_type: file
+source_path: /Users/aurum/kettu-eval/datasets/context-core/fixtures/source_code/python/parser.py
+recommended_policy: strict_raw
+required_preservations:
+- def
+- class
+- import
+- hashlib
+forbidden_transformations:
+- function_removal
+- import_removal
+- guard_removal
+expected_state:
+  content_preserved: true
+  critical_lines_count: 96
+metrics:
+- identifier_recall
+- source_code_critical_omissions
+hard_gates:
+- source_code_omission
