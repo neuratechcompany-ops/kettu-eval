@@ -1,6 +1,6 @@
 # Independent Audit Report — Kettu Eval v0.1.0-rc1
 
-**Date:** 2026-07-12 | **Tests:** 185 PASS | **Commit:** 471d924
+**Date:** 2026-07-12 | **Tests:** 185 PASS | **Release:** v0.1.0 (commit 2e772b5)
 
 ## Executive Summary
 
