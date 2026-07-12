@@ -1,0 +1,15 @@
+pyproject.toml
+src/kettu_eval/__init__.py
+src/kettu_eval.egg-info/PKG-INFO
+src/kettu_eval.egg-info/SOURCES.txt
+src/kettu_eval.egg-info/dependency_links.txt
+src/kettu_eval.egg-info/entry_points.txt
+src/kettu_eval.egg-info/requires.txt
+src/kettu_eval.egg-info/top_level.txt
+src/kettu_eval/adapters/base.py
+src/kettu_eval/adapters/null_adapter.py
+src/kettu_eval/cli/main.py
+src/kettu_eval/core/__init__.py
+src/kettu_eval/core/models.py
+src/kettu_eval/storage/run_storage.py
+tests/test_core.py

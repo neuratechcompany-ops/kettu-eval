@@ -1,0 +1,70 @@
+# Kettu Eval
+
+**Independent evaluation framework for AI agent memory, retrieval, context, and agent systems.**
+
+v0.1.0 — Phase 1: Core architecture + adapter contract.
+
+## What Kettu Eval is
+
+A framework that answers: "Does this component actually help the agent, or does it just look good on paper?"
+
+- Tests memory systems (retention, isolation, recovery)
+- Tests retrieval systems (precision, recall, ranking)
+- Tests context optimization (fidelity, recoverability, safety)
+- Tests agents (task success, planning, tool use)
+- Tests system properties (throughput, latency, concurrency)
+
+## What Kettu Eval is NOT
+
+- Not tied to Kettu Mem or Kettu Squeeze
+- Not a replacement for unit tests
+- Not a leaderboard (yet)
+- Not a single "magic number" rating
+
+## Principles
+
+1. **Framework ≠ Implementation.** Any system connects via adapters.
+2. **Adapter cannot modify scoring.** Logic is in Kettu Eval, not the adapter.
+3. **Reproducible.** Config, dataset, model — everything captured.
+4. **Unmeasured ≠ Zero.** `measured=false` → `value=null`.
+5. **Hard gate overrides score.** No amount of token savings compensates for broken refs.
+
+## Install
+
+```bash
+pip install -e ".[dev]"
+```
+
+## Quick Start
+
+```bash
+kettu-eval init
+kettu-eval doctor
+kettu-eval adapters-list
+kettu-eval adapters-inspect null-baseline
+kettu-eval validate-adapter examples/adapter.yaml
+```
+
+## Status
+
+| Component | Phase | Tests |
+|-----------|-------|-------|
+| Core models | 1 ✅ | 49/49 |
+| Adapter base | 1 ✅ | — |
+| Null adapter | 1 ✅ | — |
+| Run storage | 1 ✅ | — |
+| CLI skeleton | 1 ✅ | — |
+| Memory evaluator | 3 | — |
+| Retrieval evaluator | 3 | — |
+| Context evaluator | 4 | — |
+| Agent evaluator | 5 | — |
+| KettuMemAdapter | 2 | — |
+| KettuSqueezeAdapter | 2 | — |
+
+## Docs
+
+[Architecture](docs/ARCHITECTURE.md) · [Invariants](docs/INVARIANTS.md) · [Adapter Spec](docs/ADAPTER_SPEC.md) · [Metrics Spec](docs/METRICS_SPEC.md) · [Dataset Spec](docs/DATASET_SPEC.md) · [LLM Judge Policy](docs/LLM_JUDGE_POLICY.md) · [Reproducibility](docs/REPRODUCIBILITY.md) · [Threat Model](docs/THREAT_MODEL.md)
+
+## License
+
+MIT

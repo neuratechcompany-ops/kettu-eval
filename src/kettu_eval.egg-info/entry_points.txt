@@ -1,0 +1,2 @@
+[console_scripts]
+kettu-eval = kettu_eval.cli.main:app

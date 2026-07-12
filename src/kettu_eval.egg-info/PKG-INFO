@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: kettu-eval
+Version: 0.1.0
+Summary: Independent evaluation framework for AI agent memory, retrieval, context, and agent systems
+Author: Aurum Kettunen
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic>=2.10
+Requires-Dist: typer>=0.15
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: structlog>=24.4
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.24; extra == "dev"
+Requires-Dist: hypothesis>=6.122; extra == "dev"

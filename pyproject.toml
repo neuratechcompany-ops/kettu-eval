@@ -1,0 +1,36 @@
+[project]
+name = "kettu-eval"
+version = "0.1.0"
+description = "Independent evaluation framework for AI agent memory, retrieval, context, and agent systems"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Aurum Kettunen"}]
+readme = "README.md"
+
+dependencies = [
+    "pydantic>=2.10",
+    "typer>=0.15",
+    "pyyaml>=6.0",
+    "structlog>=24.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "hypothesis>=6.122",
+]
+
+[project.scripts]
+kettu-eval = "kettu_eval.cli.main:app"
+
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
