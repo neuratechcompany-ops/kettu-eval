@@ -1,6 +1,6 @@
 [project]
 name = "kettu-eval"
-version = "0.1.0"
+version = "0.2.0"
 description = "Independent evaluation framework for AI agent memory, retrieval, context, and agent systems"
 requires-python = ">=3.11"
 license = {text = "Apache-2.0"}
