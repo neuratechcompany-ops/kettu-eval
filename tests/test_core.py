@@ -433,3 +433,121 @@ class TestCompositeScoreEdgeCases:
         gates: list[HardGate] = []
         score = CompositeScore.compute("MES", components, weights, gates)
         assert score.total == 0.5  # only 'a' contributes
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Contract Audit Regression Tests
+# ═══════════════════════════════════════════════════════════════════════════════
+
+class TestContractAudit:
+    """Tests added during Phase 1 contract audit to prevent regression."""
+
+    def test_capability_dependency_validation(self):
+        """F1: compression=True requires process=True."""
+        from kettu_eval.adapters.base import validate_capability_dependencies
+        m = AdapterManifest(
+            name="test", version="1.0", adapter_type=AdapterType.CONTEXT,
+            capabilities={"compression": True}  # missing 'process'
+        )
+        issues = validate_capability_dependencies(m)
+        assert len(issues) >= 1
+        assert any("process" in i for i in issues)
+
+    def test_capability_dependency_clean(self):
+        """All dependencies satisfied → no issues."""
+        from kettu_eval.adapters.base import validate_capability_dependencies
+        m = AdapterManifest(
+            name="test", version="1.0", adapter_type=AdapterType.CONTEXT,
+            capabilities={"compression": True, "process": True}
+        )
+        assert validate_capability_dependencies(m) == []
+
+    def test_recoverable_refs_requires_expand(self):
+        """recoverable_refs → expand required."""
+        from kettu_eval.adapters.base import validate_capability_dependencies
+        m = AdapterManifest(
+            name="test", version="1.0", adapter_type=AdapterType.CONTEXT,
+            capabilities={"recoverable_refs": True, "process": True}  # missing expand
+        )
+        issues = validate_capability_dependencies(m)
+        assert any("expand" in i for i in issues)
+
+    def test_semantic_search_requires_search(self):
+        """semantic_search → search required."""
+        from kettu_eval.adapters.base import validate_capability_dependencies
+        m = AdapterManifest(
+            name="test", version="1.0", adapter_type=AdapterType.MEMORY,
+            capabilities={"semantic_search": True}  # missing search
+        )
+        issues = validate_capability_dependencies(m)
+        assert any("search" in i for i in issues)
+
+    def test_adapter_method_validation(self):
+        """F3: declared capability → matching method required."""
+        from kettu_eval.adapters.base import validate_adapter_methods, _has_method
+        m = AdapterManifest(
+            name="test", version="1.0", adapter_type=AdapterType.CONTEXT,
+            capabilities={"compression": True, "process": True}
+        )
+
+        # ContextAdapter's process() is abstract → _has_method returns False
+        # NullContextAdapter's process() is concrete → _has_method returns True
+        assert not _has_method(ContextAdapter, "process")
+        assert _has_method(NullContextAdapter, "process")
+
+    @pytest.mark.asyncio
+    async def test_optional_methods_no_longer_raise(self):
+        """F4: update_fact/delete_fact return False, not NotImplementedError."""
+        adapter = NullMemoryAdapter()
+        result = await adapter.update_fact("id", {"key": "val"})
+        assert result is False
+        result = await adapter.delete_fact("id")
+        assert result is False
+
+    def test_hard_gate_overrides_score(self):
+        """Regression: hard gate fail → FAIL regardless of score."""
+        components = {"a": 1.0, "b": 1.0, "c": 1.0}
+        weights = {"a": 0.34, "b": 0.33, "c": 0.33}
+        gates = [
+            HardGate(name="broken_refs", description="",
+                     condition="==0", actual=5, passed=False)
+        ]
+        score = CompositeScore.compute("COS", components, weights, gates)
+        assert score.status == EvalStatus.FAIL
+        assert score.total > 0.9  # high score, but FAIL due to hard gate
+
+    def test_partial_coverage_not_official(self):
+        """5/10 suites → PARTIAL, not OFFICIAL."""
+        cov = Coverage(total_groups=10, measured_groups=5,
+                       skipped_groups=3, unsupported_groups=2)
+        assert cov.percentage == 50.0
+        components = {"a": 1.0}
+        weights = {"a": 1.0}
+        gates: list[HardGate] = []
+        score = CompositeScore.compute("MES", components, weights, gates, cov)
+        assert score.status == EvalStatus.PARTIAL
+
+    def test_unmeasured_metric_is_null(self):
+        """measured=false → value=null, never zero."""
+        m = MetricResult(name="latency", measured=False)
+        assert m.value is None
+        assert m.measured is False
+        # Verify it's not accidentally 0
+        assert m.value != 0
+
+    def test_malformed_manifest_rejected(self):
+        """Empty name → validation fails."""
+        m = AdapterManifest(name="", version="", adapter_type=AdapterType.MEMORY)
+        issues = validate_manifest(m)
+        assert len(issues) >= 2
+
+    def test_cross_type_capability_not_leaked(self):
+        """Memory capability 'compression' doesn't require context methods."""
+        from kettu_eval.adapters.base import validate_capability_dependencies
+        m = AdapterManifest(
+            name="test", version="1.0", adapter_type=AdapterType.MEMORY,
+            capabilities={"compression": True}  # memory can compress internally
+        )
+        # Memory has no dependency rules for 'compression' — should pass
+        issues = validate_capability_dependencies(m)
+        assert issues == []

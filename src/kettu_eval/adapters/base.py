@@ -99,10 +99,12 @@ class MemoryAdapter(BaseAdapter):
     async def end_session(self, session_id: str) -> None: ...
 
     async def update_fact(self, fact_id: str, updates: dict) -> bool:
-        raise NotImplementedError
+        """Optional: update an existing fact. Returns False if not supported."""
+        return False
 
     async def delete_fact(self, fact_id: str) -> bool:
-        raise NotImplementedError
+        """Optional: delete a fact. Returns False if not supported."""
+        return False
 
 
 class ContextAdapter(BaseAdapter):
@@ -192,3 +194,104 @@ def _has_method(obj: Any, method_name: str) -> bool:
     if meth is None:
         return False
     return not getattr(meth, "__isabstractmethod__", False)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Capability → Method Mapping
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Which methods does each capability require?
+CAPABILITY_METHODS: dict[str, dict[str, list[str]]] = {
+    "memory": {
+        "add_event": ["add_event"],
+        "add_fact": ["add_fact"],
+        "search": ["search"],
+        "get_context": ["get_context"],
+        "start_session": ["start_session"],
+        "end_session": ["end_session"],
+        "fact_update": ["update_fact"],
+        "fact_delete": ["delete_fact"],
+        "semantic_search": ["search"],       # uses same search() method
+        "context_builder": ["get_context"],
+        "session_isolation": ["start_session", "get_context"],
+    },
+    "context": {
+        "process": ["process"],
+        "expand": ["expand"],
+        "inspect": ["inspect"],
+        "get_context_status": ["get_context_status"],
+        "compression": ["process"],           # process() does compression
+        "recoverable_refs": ["process", "expand"],
+        "source_code_safe": ["process"],
+        "session_isolation": ["process", "get_context_status"],
+    },
+    "agent": {
+        "run_task": ["run_task"],
+        "reset_session": ["reset_session"],
+        "get_usage": ["get_usage"],
+        "tool_use": ["run_task"],
+        "planning": ["run_task"],
+    },
+    "retrieval": {
+        "index": ["index"],
+        "query": ["query"],
+        "delete": ["delete"],
+        "semantic_search": ["query"],
+        "metadata_filter": ["query"],
+    },
+}
+
+# Capability dependencies: if cap_a is true, cap_b must also be true
+CAPABILITY_DEPENDENCIES: dict[str, dict[str, list[str]]] = {
+    "context": {
+        "compression": ["process"],
+        "recoverable_refs": ["process", "expand"],
+        "lossy": ["compression"],
+        "dedup": ["compression"],
+        "delta": ["compression", "expand"],
+    },
+    "memory": {
+        "semantic_search": ["search"],
+        "context_builder": ["get_context"],
+        "fact_update": ["add_fact"],
+        "fact_delete": ["add_fact"],
+    },
+    "retrieval": {
+        "semantic_search": ["query"],
+        "metadata_filter": ["query"],
+        "multi_hop": ["query"],
+        "ranking": ["query"],
+    },
+}
+
+
+def validate_capability_dependencies(manifest: AdapterManifest) -> list[str]:
+    """Check that declared capabilities have their dependencies satisfied."""
+    issues: list[str] = []
+    deps = CAPABILITY_DEPENDENCIES.get(manifest.adapter_type.value, {})
+
+    for cap, required in deps.items():
+        if manifest.has_capability(cap):
+            for req in required:
+                if not manifest.has_capability(req):
+                    issues.append(
+                        f"capability '{cap}' requires '{req}' but it is not declared"
+                    )
+    return issues
+
+
+def validate_adapter_methods(adapter: BaseAdapter, manifest: AdapterManifest) -> list[str]:
+    """Check that adapter implements all methods required by declared capabilities."""
+    issues: list[str] = []
+    method_map = CAPABILITY_METHODS.get(manifest.adapter_type.value, {})
+
+    for cap in manifest.capabilities:
+        if manifest.has_capability(cap):
+            required_methods = method_map.get(cap, [])
+            for method_name in required_methods:
+                if not _has_method(adapter, method_name):
+                    issues.append(
+                        f"capability '{cap}' requires method '{method_name}' "
+                        f"but adapter does not implement it"
+                    )
+    return issues
