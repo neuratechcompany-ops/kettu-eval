@@ -7,8 +7,10 @@ import pytest
 import yaml
 
 from kettu_eval.adapters.null_adapter import NullContextAdapter
-from kettu_eval.adapters.reference.kettu_squeeze import KettuSqueezeAdapter
 from kettu_eval.runners.context_runner import ContextRunner
+
+pytest.importorskip("kettu_squeeze", reason="kettu-squeeze not installed")
+from kettu_eval.adapters.reference.kettu_squeeze import KettuSqueezeAdapter
 from kettu_eval.core.models import (
     HardGate, MetricResult, RunStatus, CompositeScore, Coverage, EvalStatus
 )

@@ -1,10 +1,12 @@
 """Integration tests for reference adapters.
 
-Kettu Squeeze: always available (in-process).
-Kettu Mem: requires running server → skipped if unavailable.
+Kettu Squeeze: requires kettu-squeeze package — skipped if unavailable.
+Kettu Mem: requires running server — skipped if unavailable.
 """
 
 import pytest
+
+pytest.importorskip("kettu_squeeze", reason="kettu-squeeze not installed")
 
 from kettu_eval.adapters.reference.kettu_squeeze import KettuSqueezeAdapter
 

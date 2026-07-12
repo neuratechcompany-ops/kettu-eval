@@ -1,3 +1,4 @@
+README.md
 pyproject.toml
 src/kettu_eval/__init__.py
 src/kettu_eval.egg-info/PKG-INFO
@@ -8,8 +9,18 @@ src/kettu_eval.egg-info/requires.txt
 src/kettu_eval.egg-info/top_level.txt
 src/kettu_eval/adapters/base.py
 src/kettu_eval/adapters/null_adapter.py
+src/kettu_eval/adapters/reference/error_mapping.py
+src/kettu_eval/adapters/reference/kettu_mem.py
+src/kettu_eval/adapters/reference/kettu_squeeze.py
+src/kettu_eval/adapters/reference/simple_sqlite_memory.py
 src/kettu_eval/cli/main.py
 src/kettu_eval/core/__init__.py
 src/kettu_eval/core/models.py
+src/kettu_eval/runners/context_runner.py
+src/kettu_eval/runners/memory_runner.py
+src/kettu_eval/runners/retrieval_runner.py
 src/kettu_eval/storage/run_storage.py
 tests/test_core.py
+tests/test_integration.py
+tests/test_phase4.py
+tests/test_phase5.py

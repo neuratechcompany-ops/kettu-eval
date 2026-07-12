@@ -1,10 +1,19 @@
-"""Kettu Squeeze Adapter — in-process integration."""
+"""Kettu Squeeze Adapter — in-process integration.
+
+Requires: kettu-squeeze package installed.
+Gracefully degrades if not available.
+"""
 
 from __future__ import annotations
 
 from kettu_eval.adapters.base import ContextAdapter
-from kettu_squeeze.api.engine import SqueezeEngine
-from kettu_squeeze.types import CompressionMode, CompressionRequest, ExpandRequest, SourceType
+
+try:
+    from kettu_squeeze.api.engine import SqueezeEngine
+    from kettu_squeeze.types import CompressionMode, CompressionRequest, ExpandRequest, SourceType
+    SQUEEZE_AVAILABLE = True
+except ImportError:
+    SQUEEZE_AVAILABLE = False
 
 
 class KettuSqueezeAdapter(ContextAdapter):
