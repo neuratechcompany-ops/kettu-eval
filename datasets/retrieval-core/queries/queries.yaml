@@ -1,0 +1,2141 @@
+queries:
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0000
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0001
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'preferred_model: gpt-oss'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0001
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0002
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'preferred_model: deepseek'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0002
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0003
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'preferred_model: qwen'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0003
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0004
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'preferred_model: gpt-oss'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0004
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0005
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'response_language: Russian'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0005
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0006
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'response_language: English'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0006
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0007
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'response_language: Russian'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0007
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0008
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'timezone: GMT+3'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0008
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0009
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'timezone: GMT+0'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0009
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0010
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'timezone: GMT+3'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0010
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0011
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'os: macOS'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0011
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0012
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'os: linux'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0012
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0013
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'os: macOS'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0013
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0014
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'shell_policy: forbidden'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0014
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0015
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'shell_policy: conditional'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0015
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0016
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'shell_policy: allowed'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0016
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0017
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'config_0: value_alpha_kettu-mem_0'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0017
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0018
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'config_1: value_alpha_kettu-mem_1'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0018
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0019
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'config_2: value_alpha_kettu-mem_2'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0019
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0020
+  query_type: exact
+  required_namespace: null
+  required_project: null
+  text: 'config_3: value_alpha_kettu-mem_3'
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0021
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: what model does the user prefer
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0004
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0022
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: which language for responses
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0007
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0023
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: what timezone is configured
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0010
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0024
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: operating system in use
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0014
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0025
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: shell execution policy
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0026
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: what model does the user prefer
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0004
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0027
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: which language for responses
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0007
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0028
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: what timezone is configured
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0010
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0029
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: operating system in use
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0014
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0030
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: shell execution policy
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0031
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: what model does the user prefer
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0004
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0032
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: which language for responses
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0007
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0033
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: what timezone is configured
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0010
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0034
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: operating system in use
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0014
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0035
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: shell execution policy
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0036
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: what model does the user prefer
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0004
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0037
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: which language for responses
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0007
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0038
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: what timezone is configured
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0010
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0039
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: operating system in use
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0014
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0040
+  query_type: semantic
+  required_namespace: null
+  required_project: null
+  text: shell execution policy
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0041
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: tell me the preferred AI model
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0004
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0042
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: what language should I respond in
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0007
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0043
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: which time zone am I in
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0010
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0044
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: what computer system is being used
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0045
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: tell me the preferred AI model
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0004
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0046
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: what language should I respond in
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0007
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0047
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: which time zone am I in
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0010
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0048
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: what computer system is being used
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0049
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: tell me the preferred AI model
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0004
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0050
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: what language should I respond in
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0007
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0051
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: which time zone am I in
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0010
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0052
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: what computer system is being used
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0053
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: tell me the preferred AI model
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0004
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0054
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: what language should I respond in
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0007
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0055
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: which time zone am I in
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0010
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0056
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: what computer system is being used
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0057
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: tell me the preferred AI model
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0004
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0058
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: what language should I respond in
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0007
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0059
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: which time zone am I in
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0010
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0060
+  query_type: paraphrase
+  required_namespace: null
+  required_project: null
+  text: what computer system is being used
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0061
+  query_type: metadata
+  required_namespace: alpha
+  required_project: null
+  text: docs in namespace alpha
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0031
+  - doc-0032
+  - doc-0033
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0062
+  query_type: metadata
+  required_namespace: beta
+  required_project: null
+  text: docs in namespace beta
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0046
+  - doc-0047
+  - doc-0048
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0063
+  query_type: metadata
+  required_namespace: gamma
+  required_project: null
+  text: docs in namespace gamma
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0061
+  - doc-0062
+  - doc-0063
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0064
+  query_type: metadata
+  required_namespace: delta
+  required_project: null
+  text: docs in namespace delta
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0065
+  query_type: metadata
+  required_namespace: alpha
+  required_project: null
+  text: docs in namespace alpha
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0031
+  - doc-0032
+  - doc-0033
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0066
+  query_type: metadata
+  required_namespace: beta
+  required_project: null
+  text: docs in namespace beta
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0046
+  - doc-0047
+  - doc-0048
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0067
+  query_type: metadata
+  required_namespace: gamma
+  required_project: null
+  text: docs in namespace gamma
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0061
+  - doc-0062
+  - doc-0063
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0068
+  query_type: metadata
+  required_namespace: delta
+  required_project: null
+  text: docs in namespace delta
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0069
+  query_type: metadata
+  required_namespace: alpha
+  required_project: null
+  text: docs in namespace alpha
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0031
+  - doc-0032
+  - doc-0033
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0070
+  query_type: metadata
+  required_namespace: beta
+  required_project: null
+  text: docs in namespace beta
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0046
+  - doc-0047
+  - doc-0048
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0071
+  query_type: metadata
+  required_namespace: gamma
+  required_project: null
+  text: docs in namespace gamma
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0061
+  - doc-0062
+  - doc-0063
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0072
+  query_type: metadata
+  required_namespace: delta
+  required_project: null
+  text: docs in namespace delta
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0073
+  query_type: metadata
+  required_namespace: alpha
+  required_project: null
+  text: docs in namespace alpha
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0031
+  - doc-0032
+  - doc-0033
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0074
+  query_type: metadata
+  required_namespace: beta
+  required_project: null
+  text: docs in namespace beta
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0046
+  - doc-0047
+  - doc-0048
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0075
+  query_type: metadata
+  required_namespace: gamma
+  required_project: null
+  text: docs in namespace gamma
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0076
+  query_type: namespace
+  required_namespace: alpha
+  required_project: null
+  text: all facts from alpha
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0077
+  query_type: namespace
+  required_namespace: alpha
+  required_project: null
+  text: all facts from alpha
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0078
+  query_type: namespace
+  required_namespace: alpha
+  required_project: null
+  text: all facts from alpha
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0031
+  - doc-0032
+  - doc-0033
+  - doc-0034
+  - doc-0035
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0079
+  query_type: namespace
+  required_namespace: beta
+  required_project: null
+  text: all facts from beta
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0031
+  - doc-0032
+  - doc-0033
+  - doc-0034
+  - doc-0035
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0080
+  query_type: namespace
+  required_namespace: beta
+  required_project: null
+  text: all facts from beta
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0031
+  - doc-0032
+  - doc-0033
+  - doc-0034
+  - doc-0035
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0081
+  query_type: namespace
+  required_namespace: beta
+  required_project: null
+  text: all facts from beta
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0046
+  - doc-0047
+  - doc-0048
+  - doc-0049
+  - doc-0050
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0082
+  query_type: namespace
+  required_namespace: gamma
+  required_project: null
+  text: all facts from gamma
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0046
+  - doc-0047
+  - doc-0048
+  - doc-0049
+  - doc-0050
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0083
+  query_type: namespace
+  required_namespace: gamma
+  required_project: null
+  text: all facts from gamma
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0046
+  - doc-0047
+  - doc-0048
+  - doc-0049
+  - doc-0050
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0084
+  query_type: namespace
+  required_namespace: gamma
+  required_project: null
+  text: all facts from gamma
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0061
+  - doc-0062
+  - doc-0063
+  - doc-0064
+  - doc-0065
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0085
+  query_type: namespace
+  required_namespace: delta
+  required_project: null
+  text: all facts from delta
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0061
+  - doc-0062
+  - doc-0063
+  - doc-0064
+  - doc-0065
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0086
+  query_type: namespace
+  required_namespace: delta
+  required_project: null
+  text: all facts from delta
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0061
+  - doc-0062
+  - doc-0063
+  - doc-0064
+  - doc-0065
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0087
+  query_type: namespace
+  required_namespace: delta
+  required_project: null
+  text: all facts from delta
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0088
+  query_type: namespace
+  required_namespace: alpha
+  required_project: null
+  text: facts from alpha
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0089
+  query_type: namespace
+  required_namespace: alpha
+  required_project: null
+  text: facts from alpha
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0090
+  query_type: namespace
+  required_namespace: alpha
+  required_project: null
+  text: facts from alpha
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0091
+  query_type: project
+  required_namespace: null
+  required_project: kettu-mem
+  text: docs from project kettu-mem
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0092
+  query_type: project
+  required_namespace: null
+  required_project: kettu-mem
+  text: docs from project kettu-mem
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0093
+  query_type: project
+  required_namespace: null
+  required_project: kettu-mem
+  text: docs from project kettu-mem
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0094
+  query_type: project
+  required_namespace: null
+  required_project: kettu-mem
+  text: docs from project kettu-mem
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0095
+  query_type: project
+  required_namespace: null
+  required_project: kettu-mem
+  text: docs from project kettu-mem
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0021
+  - doc-0022
+  - doc-0023
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0096
+  query_type: project
+  required_namespace: null
+  required_project: kettu-squeeze
+  text: docs from project kettu-squeeze
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0021
+  - doc-0022
+  - doc-0023
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0097
+  query_type: project
+  required_namespace: null
+  required_project: kettu-squeeze
+  text: docs from project kettu-squeeze
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0021
+  - doc-0022
+  - doc-0023
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0098
+  query_type: project
+  required_namespace: null
+  required_project: kettu-squeeze
+  text: docs from project kettu-squeeze
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0021
+  - doc-0022
+  - doc-0023
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0099
+  query_type: project
+  required_namespace: null
+  required_project: kettu-squeeze
+  text: docs from project kettu-squeeze
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0021
+  - doc-0022
+  - doc-0023
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0100
+  query_type: project
+  required_namespace: null
+  required_project: kettu-squeeze
+  text: docs from project kettu-squeeze
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0026
+  - doc-0027
+  - doc-0028
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0101
+  query_type: project
+  required_namespace: null
+  required_project: kettu-eval
+  text: docs from project kettu-eval
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0026
+  - doc-0027
+  - doc-0028
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0102
+  query_type: project
+  required_namespace: null
+  required_project: kettu-eval
+  text: docs from project kettu-eval
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0026
+  - doc-0027
+  - doc-0028
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0103
+  query_type: project
+  required_namespace: null
+  required_project: kettu-eval
+  text: docs from project kettu-eval
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0026
+  - doc-0027
+  - doc-0028
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0104
+  query_type: project
+  required_namespace: null
+  required_project: kettu-eval
+  text: docs from project kettu-eval
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0026
+  - doc-0027
+  - doc-0028
+  expected_order:
+  - 0
+  - 1
+  - 2
+  forbidden_documents: []
+  query_id: q-0105
+  query_type: project
+  required_namespace: null
+  required_project: kettu-eval
+  text: docs from project kettu-eval
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0000
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0106
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of preferred_model: gpt-oss'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0001
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0107
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of preferred_model: deepseek'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0002
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0108
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of preferred_model: qwen'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0003
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0109
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of preferred_model: gpt-oss'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0004
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0110
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of response_language: Russian'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0005
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0111
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of response_language: English'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0006
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0112
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of response_language: Russian'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0007
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0113
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of timezone: GMT+3'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0008
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0114
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of timezone: GMT+0'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0009
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0115
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of timezone: GMT+3'
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents:
+  - doc-0010
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0116
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of os: macOS'
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0011
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0117
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of os: linux'
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0012
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0118
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of os: macOS'
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0013
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0119
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of shell_policy: forbidden'
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0014
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0120
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of shell_policy: conditional'
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0015
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0121
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of shell_policy: allowed'
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0016
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0122
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of config_0: value_alpha_kettu-me'
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0017
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0123
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of config_1: value_alpha_kettu-me'
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0018
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0124
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of config_2: value_alpha_kettu-me'
+- acceptable_alternatives: []
+  difficulty: medium
+  expected_documents:
+  - doc-0019
+  expected_order:
+  - 0
+  forbidden_documents: []
+  query_id: q-0125
+  query_type: temporal
+  required_namespace: null
+  required_project: null
+  text: 'latest version of config_3: value_alpha_kettu-me'
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0126
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: deployment config for kettu-mem in alpha
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0127
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: security policy and shell preferences for production
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0128
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: deployment config for kettu-mem in alpha
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0129
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: security policy and shell preferences for production
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0130
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: deployment config for kettu-mem in alpha
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0131
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: security policy and shell preferences for production
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0132
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: deployment config for kettu-mem in alpha
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0133
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: security policy and shell preferences for production
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0134
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: deployment config for kettu-mem in alpha
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0135
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: security policy and shell preferences for production
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0136
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: deployment config for kettu-mem in alpha
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0137
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: security policy and shell preferences for production
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0138
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: deployment config for kettu-mem in alpha
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0139
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: security policy and shell preferences for production
+- acceptable_alternatives: []
+  difficulty: hard
+  expected_documents:
+  - doc-0000
+  - doc-0001
+  - doc-0002
+  - doc-0003
+  - doc-0004
+  expected_order:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  forbidden_documents: []
+  query_id: q-0140
+  query_type: multi_hop
+  required_namespace: null
+  required_project: null
+  text: deployment config for kettu-mem in alpha
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents: []
+  expected_order: []
+  forbidden_documents: []
+  query_id: q-0141
+  query_type: negative
+  required_namespace: null
+  required_project: null
+  text: zzz_nonexistent_query_0_xyz
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents: []
+  expected_order: []
+  forbidden_documents: []
+  query_id: q-0142
+  query_type: negative
+  required_namespace: null
+  required_project: null
+  text: zzz_nonexistent_query_1_xyz
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents: []
+  expected_order: []
+  forbidden_documents: []
+  query_id: q-0143
+  query_type: negative
+  required_namespace: null
+  required_project: null
+  text: zzz_nonexistent_query_2_xyz
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents: []
+  expected_order: []
+  forbidden_documents: []
+  query_id: q-0144
+  query_type: negative
+  required_namespace: null
+  required_project: null
+  text: zzz_nonexistent_query_3_xyz
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents: []
+  expected_order: []
+  forbidden_documents: []
+  query_id: q-0145
+  query_type: negative
+  required_namespace: null
+  required_project: null
+  text: zzz_nonexistent_query_4_xyz
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents: []
+  expected_order: []
+  forbidden_documents: []
+  query_id: q-0146
+  query_type: negative
+  required_namespace: null
+  required_project: null
+  text: zzz_nonexistent_query_5_xyz
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents: []
+  expected_order: []
+  forbidden_documents: []
+  query_id: q-0147
+  query_type: negative
+  required_namespace: null
+  required_project: null
+  text: zzz_nonexistent_query_6_xyz
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents: []
+  expected_order: []
+  forbidden_documents: []
+  query_id: q-0148
+  query_type: negative
+  required_namespace: null
+  required_project: null
+  text: zzz_nonexistent_query_7_xyz
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents: []
+  expected_order: []
+  forbidden_documents: []
+  query_id: q-0149
+  query_type: negative
+  required_namespace: null
+  required_project: null
+  text: zzz_nonexistent_query_8_xyz
+- acceptable_alternatives: []
+  difficulty: easy
+  expected_documents: []
+  expected_order: []
+  forbidden_documents: []
+  query_id: q-0150
+  query_type: negative
+  required_namespace: null
+  required_project: null
+  text: zzz_nonexistent_query_9_xyz

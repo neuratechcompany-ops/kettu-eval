@@ -1,0 +1,1 @@
+# Retrieval scenario format: query_id, query_type, text, expected_documents, expected_order, required_namespace, required_project, forbidden_documents. See datasets/retrieval-core/queries/queries.yaml.

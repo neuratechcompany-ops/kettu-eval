@@ -1,0 +1,18 @@
+categories:
+  exact: 20
+  metadata: 15
+  multi_hop: 15
+  namespace: 15
+  negative: 10
+  paraphrase: 20
+  project: 15
+  semantic: 20
+  temporal: 20
+corpus_size: 506
+created_at: '2026-07-12T14:07:20.768698'
+dataset_id: retrieval-core
+description: Knowledge Retrieval Benchmark — 500+ docs, 150+ queries
+language: multilingual
+license: MIT
+query_count: 150
+version: 1.0.0

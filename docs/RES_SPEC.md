@@ -1,0 +1,1 @@
+# RES — Retrieval Effectiveness Score. Precision 25, Recall 25, Ranking 15, Metadata 10, Namespace 10, Temporal 5, False 5, Latency 5. Hard gates: cross-namespace=0, cross-project=0, forbidden@rank1=0.
